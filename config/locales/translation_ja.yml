@@ -1,0 +1,9 @@
+ja:
+  activerecord:
+    models:
+      inquiry: お問い合わせ  #g
+
+    attributes:
+      inquiry:
+        body: 内容  #g
+        email: メールアドレス  #g

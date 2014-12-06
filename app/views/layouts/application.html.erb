@@ -36,19 +36,16 @@
 
     <%= javascript_include_tag "application" %>
   </head>
-  <body>
+  <body data-controller=<%= params[:controller] %> data-action=<%= params[:action] %>>
 
     <div class="container">
-      <div class="row">
-        <%= bootstrap_flash %>
-        <%= yield %>
-      </div><!--/row-->
-
-      <footer>
-        <p>&copy; @h3_poteto 2014</p>
-      </footer>
+      <%= bootstrap_flash %>
+      <%= yield %>
 
     </div> <!-- /container -->
+    <footer>
+      <p>&copy; @h3_poteto 2014</p>
+    </footer>
 
   </body>
 </html>

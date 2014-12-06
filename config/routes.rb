@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  root to: "contents#index"
-
+  resources :inquiries, only: [:index, :show, :new, :create]
   resources :contents, only: :index
+
+  root to: "contents#index"
 end
