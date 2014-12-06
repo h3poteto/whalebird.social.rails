@@ -1,0 +1,14 @@
+<h1>ヘルプ</h1>
+
+<table>
+
+  <tbody>
+    <% @helps.each do |help| %>
+      <tr>
+        <td><%= link_to "help.title", help_path(help) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
