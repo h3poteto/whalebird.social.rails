@@ -14,8 +14,8 @@ gem 'coffee-rails', '~> 4.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 gem 'therubyracer',  platforms: :ruby
 
-gem 'less-rails'
-gem 'twitter-bootstrap-rails'
+gem 'bootstrap-sass'
+gem 'bootswatch-rails'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -46,6 +46,7 @@ gem 'figaro', '<= 0.7.0'
 gem 'rails_config'
 gem 'i18n_generators'
 gem 'simple_form'
+gem 'jpmobile'
 
 group :development, :test do
   gem 'debugger2', :git => 'git://github.com/ko1/debugger2.git'

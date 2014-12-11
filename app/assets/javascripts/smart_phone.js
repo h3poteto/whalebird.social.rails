@@ -14,4 +14,4 @@
 //= require jquery_ujs
 //= require bootstrap-sprockets
 //= require turbolinks
-//= require_tree ./application
+//= require_tree ./smart_phone
