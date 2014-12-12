@@ -27,7 +27,7 @@ footer {
 
 .navbar {
   li {
-    a:hover {
+    a:hover, a:visited, a:focus {
       background: none;
       border: 1px solid transparent;
     }

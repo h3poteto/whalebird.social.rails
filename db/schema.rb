@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(version: 20141211071217) do
   create_table "helps", force: true do |t|
     t.string   "title"
     t.text     "body"
+    t.string   "image"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

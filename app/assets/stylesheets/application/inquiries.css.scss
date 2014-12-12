@@ -13,6 +13,9 @@ body[data-controller="inquiries"] {
     text-align: center;
     max-width: 1000px;
     margin: 100px auto;
+    textarea {
+      height: 150px;
+    }
   }
   .form-actions {
     text-align: center;
