@@ -24,10 +24,23 @@ body[data-controller="contents"] {
     .description {
       padding-top: 60px;
       padding-bottom: 60px;
+      table.functions {
+	margin: 0 auto;
+	td {
+	  padding: 30px 50px;
+	  i {
+	    font-size: 40px;
+	  }
+	}
+      }
     }
   }
   .gray-back {
     background: #dcdcdc;
+  }
+  .blue-back {
+    background: #4582ec;
+    color: #ffffff;
   }
 
   .screenshot {

@@ -47,6 +47,7 @@ gem 'rails_config'
 gem 'i18n_generators'
 gem 'simple_form'
 gem 'jpmobile'
+gem 'font-awesome-rails'
 
 group :development, :test do
   gem 'debugger2', :git => 'git://github.com/ko1/debugger2.git'
