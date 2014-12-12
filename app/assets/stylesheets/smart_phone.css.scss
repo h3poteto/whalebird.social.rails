@@ -14,4 +14,9 @@
 @import "bootswatch/readable/variables";
 @import "bootstrap";
 @import "bootswatch/readable/bootswatch";
-@import "./smart_phone/*.scss"
+@import "./smart_phone/*.scss";
+
+footer {
+  border-top: solid 1px #dddddd;
+  text-align: center;
+}

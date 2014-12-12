@@ -39,10 +39,8 @@
   <body data-controller=<%= params[:controller] %> data-action=<%= params[:action] %>>
 
     <%= render "layouts/header_application" %>
-    <div class="container">
-      <%= yield %>
+    <%= yield %>
 
-    </div> <!-- /container -->
     <footer>
       <p>&copy; @h3_poteto 2014</p>
     </footer>
