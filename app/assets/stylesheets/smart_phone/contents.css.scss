@@ -1,3 +1,49 @@
-// Place all the styles related to the Contents controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+body[data-controller="contents"] {
+  .main-board {
+    text-align: center;
+    width: 100%;
+    height: 320px;
+    background: image-url("main_background.jpg") no-repeat;
+    background-size: cover;
+
+    .main-title {
+      padding-top: 180px;
+    }
+    .app-store-badge {
+      padding: 10px;
+    }
+  }
+
+  .main-area {
+    width: 100%;
+    text-align: center;
+    h3 {
+      font-size: 18px;
+    }
+    .app-description {
+      .description {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	table.functions {
+	  margin: 0 auto;
+	  td {
+	    padding: 5px 5px;
+	    i {
+	      font-size: 30px;
+	    }
+	  }
+	}
+	h4 {
+	  font-size: 14px;
+	}
+      }
+    }
+    .screenshot {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  }
+  .gray-back {
+    background: #dcdcdc;
+  }
+}

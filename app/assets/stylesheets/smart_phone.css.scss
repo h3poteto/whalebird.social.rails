@@ -20,4 +20,16 @@
 footer {
   border-top: solid 1px #dddddd;
   text-align: center;
+  padding-top: 100px;
+  padding-bottom: 30px;
+  color: #acacac;
+}
+
+.navbar {
+  li {
+    a:hover, a:visited, a:focus {
+      background: none;
+      border: 1px solid transparent;
+    }
+  }
 }

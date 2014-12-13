@@ -1,3 +1,11 @@
-# Place all the behaviors and hooks related to the matching controller here.
-# All this logic will automatically be available in application.js.
-# You can use CoffeeScript in this file: http://coffeescript.org/
+class @ContentsController
+  index: ->
+    $(".main-board").width($(window).width())
+    $(".main-board").height($(window).height())
+
+    #$(".main-title").css("padding-top", $(window).height() * 0.4)
+    $(window).resize () ->
+      $(".main-board").width($(window).width())
+      $(".main-board").height($(window).height())
+
+      $(".main-title").css("padding-top", $(window).height() * 0.4)
