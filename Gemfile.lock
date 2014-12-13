@@ -1,11 +1,3 @@
-GIT
-  remote: git://github.com/ko1/debugger2.git
-  revision: 868f94f8b67e13f3cd3921be15168dcebf2e7019
-  specs:
-    debugger2 (1.0.0.beta2)
-      columnize (>= 0.3.1)
-      debugger-linecache (~> 1.2.0)
-
 GEM
   remote: https://rubygems.org/
   remote: https://rails-assets.org/
@@ -48,6 +40,10 @@ GEM
     bootswatch-rails (3.2.4)
       railties (>= 3.1)
     builder (3.2.2)
+    byebug (3.5.1)
+      columnize (~> 0.8)
+      debugger-linecache (~> 1.2)
+      slop (~> 3.6)
     capybara (2.4.4)
       mime-types (>= 1.16)
       nokogiri (>= 1.3.3)
@@ -267,6 +263,7 @@ GEM
       nokogiri (~> 1.4)
       ntlm-http (~> 0.1, >= 0.1.1)
       webrobots (>= 0.0.9, < 0.2)
+    method_source (0.8.2)
     mime-types (2.4.3)
     mini_portile (0.6.1)
     minitest (5.4.3)
@@ -281,6 +278,13 @@ GEM
       daemon_controller (>= 1.2.0)
       rack
       rake (>= 0.8.1)
+    pry (0.10.1)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
+    pry-byebug (2.0.0)
+      byebug (~> 3.4)
+      pry (~> 0.10)
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
@@ -334,6 +338,7 @@ GEM
     simple_form (3.1.0)
       actionpack (~> 4.0)
       activemodel (~> 4.0)
+    slop (3.6.0)
     spring (1.2.0)
     sprockets (2.12.3)
       hike (~> 1.2)
@@ -374,7 +379,6 @@ DEPENDENCIES
   bootswatch-rails
   capybara
   coffee-rails (~> 4.0.0)
-  debugger2!
   figaro (<= 0.7.0)
   font-awesome-rails
   i18n_generators
@@ -384,6 +388,7 @@ DEPENDENCIES
   jquery-turbolinks
   mysql2
   passenger
+  pry-byebug
   rails (= 4.1.7)
   rails-assets-underscore.string
   rails_config
