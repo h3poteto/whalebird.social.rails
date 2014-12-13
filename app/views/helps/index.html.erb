@@ -2,6 +2,13 @@
   <h3>ヘルプ</h3>
 </div>
 
+<div class="sidebar">
+  <ul>
+    <% @helps.each do |help| %>
+      <li><%= link_to help.title, "#help_" + help.id.to_s %></li>
+    <% end %>
+  </ul>
+</div>
 <div class="helps">
   <% @helps.each do |help| %>
     <div class="tips" id=<%= "help_" + help.id.to_s %>>
@@ -12,13 +19,4 @@
     </div>
 
   <% end %>
-</div>
-
-
-<div class="sidebar">
-  <ul>
-    <% @helps.each do |help| %>
-      <li><%= link_to help.title, "#help_" + help.id.to_s %></li>
-    <% end %>
-  </ul>
 </div>

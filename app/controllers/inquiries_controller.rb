@@ -2,12 +2,6 @@
 class InquiriesController < ApplicationController
   before_action :set_inquiry, only: :show
 
-  # GET /inquiries
-  # GET /inquiries.json
-  def index
-    @inquiries = Inquiry.all
-  end
-
   # GET /inquiries/1
   # GET /inquiries/1.json
   def show

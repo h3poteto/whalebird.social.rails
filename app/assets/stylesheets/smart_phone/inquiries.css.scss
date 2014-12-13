@@ -1,13 +1,6 @@
 body[data-controller="inquiries"] {
   .header {
-    padding-top: 25px;
-    padding-bottom: 25px;
-    width: 100%;
-    background: image-url("main_background.jpg") no-repeat;
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    border-bottom: solid 1px #dcdcdc;
+    display: none;
   }
   .inquiry-form {
     text-align: center;

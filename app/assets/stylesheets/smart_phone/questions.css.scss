@@ -1,3 +1,17 @@
-// Place all the styles related to the Questions controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+body[data-controller="questions"] {
+  .header {
+    display: none;
+  }
+  .questions {
+    margin:30px 20px;
+    dt {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      color: #4582ec;
+      cursor: pointer;
+    }
+    dd {
+      display: none;
+    }
+  }
+}

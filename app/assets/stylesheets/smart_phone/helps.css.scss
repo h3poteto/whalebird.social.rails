@@ -1,3 +1,30 @@
-// Place all the styles related to the Helps controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+body[data-controller="helps"] {
+  .header {
+    display: none;
+  }
+  .helps {
+    margin: 50px auto;
+    text-align: center;
+    .tips {
+      margin-bottom: 40px;
+      padding-left: 20px;
+      padding-right: 20px;
+      border-top: 1px solid #dcdcdc;
+      .title {
+	color: #4582ec;
+	font-size: 20px;
+	padding: 25px 0 0 0;
+	font-weight: bold;
+	text-align: center;
+      }
+      .screenshot {
+	width: 100%;
+	margin: 20px 0;
+      }
+    }
+  }
+  .sidebar {
+    padding-top: 30px;
+    color: #4582ec;
+  }
+}
