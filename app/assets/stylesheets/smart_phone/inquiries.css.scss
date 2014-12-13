@@ -1,4 +1,26 @@
 body[data-controller="inquiries"] {
+  .header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 100%;
+    background: image-url("main_background.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    border-bottom: solid 1px #dcdcdc;
+  }
+  .inquiry-form {
+    text-align: center;
+    max-width: 1000px;
+    margin: 50px auto;
+    textarea {
+      height: 150px;
+    }
+  }
+  .form-group {
+    margin-right: 0;
+    margin-left: 0;
+  }
   .form-actions {
     text-align: center;
   }
