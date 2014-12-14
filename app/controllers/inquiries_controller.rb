@@ -5,6 +5,7 @@ class InquiriesController < ApplicationController
   # GET /inquiries/1
   # GET /inquiries/1.json
   def show
+    ## TODO: sessionか何かをみて，create直後しかみられないようにしておいて
   end
 
   # GET /inquiries/new

@@ -1,4 +1,18 @@
-<p>以下の内容でお問い合わせを受け付けました</p>
+<div class="header">
+  <h3>お問い合わせ</h3>
+</div>
 
-<p><%= @inquiry.email %></p>
-<p><%= @inquiry.body %></p>
+<div class="inquiry-form">
+  <p class="text-success">以下の内容でお問い合わせを受け付けました</p>
+  <br />
+  <table class="table">
+    <tr>
+      <th>メールアドレス：</th>
+      <td><p><%= @inquiry.email %></p></td>
+    </tr>
+    <tr>
+      <th>内容：</th>
+      <td><p><%= @inquiry.body %></p></td>
+    </tr>
+  </table>
+</div>

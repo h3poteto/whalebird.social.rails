@@ -9,6 +9,13 @@ body[data-controller="inquiries"] {
     textarea {
       height: 150px;
     }
+    table {
+      margin: 10px auto;
+      max-width: 700px;
+      th {
+	width: 150px;
+      }
+    }
   }
   .form-group {
     margin-right: 0;
