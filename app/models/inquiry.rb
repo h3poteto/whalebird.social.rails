@@ -4,6 +4,6 @@ class Inquiry < ActiveRecord::Base
   validates :body, presence: true
 
   def send_admin
-    InquiryMailer.send_admin(id).deliver
+    InquiryMailer.send_admin(id).deliver if Rails.env.production?
   end
 end
