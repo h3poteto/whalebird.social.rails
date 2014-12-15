@@ -4,8 +4,9 @@ class InquiriesController < ApplicationController
   # GET /inquiries/1
   # GET /inquiries/1.json
   def show
-    @inquiry = session[:inquiry]
-    session.delete(:inquiry)
+    @inquiry = Inquiry.where(id: session[:inquiry_id]).first
+    session.delete(:inquiry_id)
+    redirect_to root_path if @inquiry.blank?
   end
 
   # GET /inquiries/new
@@ -20,7 +21,7 @@ class InquiriesController < ApplicationController
 
     respond_to do |format|
       if @inquiry.save
-        session[:inquiry] = @inquiry
+        session[:inquiry_id] = @inquiry.id
         format.html { redirect_to @inquiry, notice: 'お問い合わせを受け付けました
 ' }
         format.json { render :show, status: :created, location: @inquiry }
