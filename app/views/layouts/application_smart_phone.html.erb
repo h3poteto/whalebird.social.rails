@@ -34,6 +34,7 @@
     <!-- Size should be 32 x 32 pixels -->
     <%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>
 
+    <%= javascript_include_tag "smart_phone" %>
   </head>
   <body data-controller=<%= params[:controller] %> data-action=<%= params[:action] %>>
     <%= yield %>
@@ -41,6 +42,5 @@
     <footer>
       <p>&copy; @h3_poteto 2014</p>
     </footer>
-    <%= javascript_include_tag "smart_phone" %>
   </body>
 </html>

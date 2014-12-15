@@ -1,6 +1,6 @@
 class @QuestionsController
   index: ->
-    $("dt").click ()->
+    $("dt").on "click", ()->
       $this = $(@)
       if $this.next("dd").css("display") == "block"
         $this.next("dd").hide()
