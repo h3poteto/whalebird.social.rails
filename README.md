@@ -2,6 +2,8 @@
 
 iOS向けtwitterクライアント，[Whalebird](https://itunes.apple.com/jp/app/whalebird/id955717062)の公式サイトです．
 
+[http://whalebird.org/](http://whalebird.org/)
+
 アプリ内部からWebViewを通して参照する情報として，
 
 * お問い合わせ
