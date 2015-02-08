@@ -42,7 +42,7 @@
     <footer>
       <p>&copy; 2014-<%= Time.current.year %> Akira Fukushima</p>
     </footer>
-    <% if Rails.evn.production? %>
+    <% if Rails.env.production? %>
       <%= render "layouts/google_analytics" %>
     <% end %>
   </body>
