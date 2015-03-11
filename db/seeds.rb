@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 ActiveRecord::Base.connection.execute("TRUNCATE TABLE helps")
-ActiveRecord::Base.connection.execute("TRUNCATE TABLE questions")
 
 
 Help.create([
@@ -11,10 +10,4 @@ Help.create([
     {title: "フォロー/アンフォロー", body: "ユーザーのプロフィール画面からフォローやフォロー解除が行えます。非公開ユーザーについては、フォローリクエストを送信します。", image: "helps/profile.png"},
     { title: "通知が来ない場合には？", body: "iPhone本体の設定から通知を許可してください。それでも来ない場合は、Whalebirdの設定から、通知を一度オフにして、再びオンに戻してみてください。", image: "helps/notification_settings.png"},
     {title: "Userstreamの使用", body: "設定タブの下の方にUserstreamの設定があります。ここからUserstreamをオンにします。このときiPhone本体のTwitterアカウントが設定されている必要があります。", image: "helps/userstream_settings.png"}
-])
-
-Question.create([
-    { title: "通知が来ない場合には？", answer: "iPhone本体の設定から通知を許可してください。それでも来ない場合は、Whalebirdの設定から、通知を一度オフにして、再びオンに戻してみてください。"},
-    { title: "複数アカウントの運用をしたい", answer: "マルチアカウントには対応しておりません。別のアカウントでサインインしたい場合は、一度設定画面からアカウント情報を削除してください。"},
-    { title: "Userstreamを使いたい", answer: "設定からオンにすることができます。通信量が多くなるため、Wifi環境を推奨しています。"},
 ])
