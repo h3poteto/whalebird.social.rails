@@ -9,42 +9,55 @@ body[data-controller="helps"] {
     text-align: center;
     border-bottom: solid 1px #dcdcdc;
   }
-  .helps {
-    max-width: 800px;
-    margin: 100px auto;
-    .tips {
-      margin-bottom: 40px;
-      border-bottom: 1px solid #dcdcdc;
-      .title {
-	color: #4582ec;
-	font-size: 20px;
-	padding: 25px 0 0 0;
-	font-weight: bold;
-	text-align: center;
-      }
-      .left {
-	float: left;
-	max-width: 550px;
-	padding-top: 50px;
-      }
-      .right {
-	float: right;
-	max-width: 300px;
-      }
-      .screenshot {
-	width: 200px;
-	padding: 20px;
+  .page {
+    max-width: 1000px;
+    margin: 20px auto 0;
+    position: relative;
+    .helps {
+      max-width: 800px;
+      float: left;
+      .tips {
+        border-bottom: 1px solid #dcdcdc;
+        .title {
+	  color: #4582ec;
+	  font-size: 20px;
+	  padding: 25px 0 0 0;
+	  font-weight: bold;
+	  text-align: center;
+        }
+        .left {
+	  float: left;
+	  max-width: 550px;
+	  padding-top: 50px;
+          margin-bottom: 30px;
+        }
+        .right {
+	  float: right;
+	  max-width: 300px;
+        }
+        .screenshot {
+	  width: 200px;
+	  padding: 20px;
+        }
       }
     }
-  }
-  .sidebar {
-    width: 200px;
-    position: fixed;
-    top: 230px;
-    right: 50px;
-    ul {
-      li {
-	color: #4582ec;
+    .sidebar-wrapper {
+      float: right;
+      width: 200px;
+      position: relative;
+      .sidebar {
+        float: right;
+        width: 200px;
+        position: relative;
+        ul {
+          li {
+	    color: #4582ec;
+          }
+        }
+      }
+      .fixed {
+        position: fixed;
+        top: 20px;
       }
     }
   }

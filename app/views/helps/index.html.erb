@@ -2,21 +2,28 @@
   <h3>ヘルプ</h3>
 </div>
 
-<div class="sidebar">
-  <ul>
-    <% @helps.each do |help| %>
-      <li><%= link_to help.title, "#help_" + help.id.to_s %></li>
-    <% end %>
-  </ul>
-</div>
-<div class="helps">
-  <% @helps.each do |help| %>
-    <div class="tips" id=<%= "help_" + help.id.to_s %>>
-      <p class="title"><%= fa_icon "info-circle" %><%= help.title %></p>
-      <div class="left"><%= help.body %></div>
-      <div class="right"><%= image_tag(help.image, class: "screenshot") %></div>
-      <div class="clearfix"></div>
+<div class="page">
+  <div class="sidebar-wrapper">
+    <div class="sidebar">
+      <ul>
+        <% @helps.each do |help| %>
+          <li><%= link_to help.title, "#help_" + help.id.to_s %></li>
+        <% end %>
+      </ul>
     </div>
+  </div>
+  <div class="helps">
+    <% @helps.each do |help| %>
+      <div class="tips" id=<%= "help_" + help.id.to_s %>>
+        <p class="title"><%= fa_icon "info-circle" %><%= help.title %></p>
+        <div class="left"><%= help.body %></div>
+        <% if help.image.present? %>
+          <div class="right"><%= image_tag(help.image, class: "screenshot") %></div>
+        <% end %>
+        <div class="clearfix"></div>
+      </div>
 
-  <% end %>
+    <% end %>
+  </div>
+  <div class="clearfix"></div>
 </div>
