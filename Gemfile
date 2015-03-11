@@ -50,7 +50,7 @@ gem 'i18n_generators'
 gem 'simple_form'
 gem 'jpmobile'
 gem 'font-awesome-rails'
-gem 'actionpack-page_caching'
+gem 'actionpack-action_caching'
 
 group :development, :test do
   gem 'pry-byebug'
