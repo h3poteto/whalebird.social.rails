@@ -26,5 +26,10 @@ body[data-controller="helps"] {
   .sidebar {
     padding-top: 30px;
     color: #4582ec;
+    ul {
+      li {
+        margin: 10px 0;
+      }
+    }
   }
 }
