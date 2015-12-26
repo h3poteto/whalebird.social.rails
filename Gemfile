@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
-source 'https://rails-assets.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.7'
@@ -16,7 +15,6 @@ gem 'therubyracer',  platforms: :ruby
 
 gem 'bootstrap-sass'
 gem 'bootswatch-rails'
-gem 'rails-assets-underscore.string'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -57,4 +55,9 @@ group :development, :test do
   gem 'binding_of_caller'
   gem 'rspec-rails'
   gem 'capybara'
+end
+
+
+source 'https://rails-assets.org' do
+  gem 'rails-assets-underscore.string'
 end
