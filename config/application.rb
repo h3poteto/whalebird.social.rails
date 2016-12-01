@@ -21,5 +21,7 @@ module WhalebirdOrg
     config.i18n.default_locale = :ja
     I18n.enforce_available_locales = false
     config.encoding = 'utf-8'
+
+    config.active_record.raise_in_transactional_callbacks = true
   end
 end
