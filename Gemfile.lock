@@ -148,8 +148,6 @@ GEM
       rails-deprecated_sanitizer (>= 1.0.1)
     rails-html-sanitizer (1.0.3)
       loofah (~> 2.0)
-    rails_config (0.99.0)
-      config (>= 1.0.0.beta1)
     railties (4.2.7)
       actionpack (= 4.2.7)
       activesupport (= 4.2.7)
@@ -231,6 +229,7 @@ DEPENDENCIES
   bootswatch-rails
   capybara
   coffee-rails (~> 4.2.1)
+  config
   figaro (<= 0.7.0)
   font-awesome-rails
   i18n_generators
@@ -241,7 +240,6 @@ DEPENDENCIES
   mysql2
   pry-byebug
   rails (= 4.2.7)
-  rails_config
   rspec-rails
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)

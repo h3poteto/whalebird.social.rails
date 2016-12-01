@@ -42,7 +42,7 @@ gem 'unicorn'
 # gem 'debugger', group: [:development, :test]
 
 gem 'figaro', '<= 0.7.0'
-gem 'rails_config'
+gem 'config'
 gem 'i18n_generators'
 gem 'simple_form'
 gem 'jpmobile'
