@@ -1,0 +1,26 @@
+version: "2"
+services:
+  storage:
+   image: busybox
+   volumes:
+     - /var/lib/mysql
+  mysql:
+    image: mysql:5.6.29
+    ports:
+      - "3306:3306"
+    volumes_from:
+      - storage
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: "true"
+  rails:
+    image: h3poteto/rails
+    environment:
+      BUNDLE_APP_CONFIG: /usr/src/app/.bundle
+    volumes:
+      - ~/.ssh:/home/rails/.ssh
+      - .:/usr/src/app
+    ports:
+      - "3000:3000"
+    links:
+      - mysql:mysql
+    command: /bin/bash

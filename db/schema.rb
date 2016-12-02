@@ -13,17 +13,17 @@
 
 ActiveRecord::Schema.define(version: 20141206131013) do
 
-  create_table "helps", force: true do |t|
-    t.string   "title"
-    t.text     "body"
-    t.string   "image"
+  create_table "helps", force: :cascade do |t|
+    t.string   "title",      limit: 255
+    t.text     "body",       limit: 65535
+    t.string   "image",      limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "inquiries", force: true do |t|
-    t.string   "email"
-    t.text     "body"
+  create_table "inquiries", force: :cascade do |t|
+    t.string   "email",      limit: 255
+    t.text     "body",       limit: 65535
     t.datetime "created_at"
     t.datetime "updated_at"
   end
