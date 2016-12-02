@@ -49,11 +49,6 @@ gem 'jpmobile'
 gem 'font-awesome-rails'
 gem 'actionpack-action_caching'
 gem 'underscore-string-rails'
-gem 'capistrano', "~> 3.6"
-gem 'capistrano-rails'
-gem 'capistrano-rbenv'
-gem 'capistrano-bundler'
-gem 'capistrano3-unicorn'
 
 group :development, :test do
   gem 'pry-byebug'
@@ -61,4 +56,12 @@ group :development, :test do
   gem 'binding_of_caller'
   gem 'rspec-rails'
   gem 'capybara'
+end
+
+group :development do
+  gem 'capistrano', "~> 3.6"
+  gem 'capistrano-rails'
+  gem 'capistrano-rbenv'
+  gem 'capistrano-bundler'
+  gem 'capistrano3-unicorn'
 end
