@@ -1,9 +1,12 @@
 class Inquiry < ActiveRecord::Base
-  after_create :send_admin
+  after_commit :send_admin, on: :create
   validates :email, presence: true
   validates :body, presence: true
 
   def send_admin
-    InquiryMailer.send_admin(id).deliver if Rails.env.production?
+    if Rails.env.production?
+      InquiryMailer.send_admin(id).deliver
+      InquiryNotifier.slack(id)
+    end
   end
 end
