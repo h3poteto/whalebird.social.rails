@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 class InquiryNotifier
   def self.slack(id)
     inquiry = Inquiry.find(id)
