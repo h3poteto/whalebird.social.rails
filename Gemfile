@@ -49,6 +49,7 @@ gem 'jpmobile'
 gem 'font-awesome-rails'
 gem 'actionpack-action_caching'
 gem 'underscore-string-rails'
+gem 'slack-notifier'
 
 group :development, :test do
   gem 'pry-byebug'
