@@ -1,0 +1,9 @@
+ja:
+  activerecord:
+    models:
+      inquiry: Inquiry
+
+    attributes:
+      inquiry:
+        body: Body
+        email: Email

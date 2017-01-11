@@ -1,13 +1,13 @@
 <div class="main-board">
   <div class="main-title">
-    <h1>Whalebird</h1>
+    <h1><%= t(".title") %></h1>
     <%= link_to image_tag("App_Store_Badge.svg", class: "app-store-badge"), "https://itunes.apple.com/jp/app/id955717062", target: "_blank" %>
   </div>
 </div>
 <div class="main-area">
   <div class="app-description">
     <div class="description">
-      <h3>whalebirdはシンプルなデザインのtwitterクライアントです</h3>
+      <h3><%= t(".description") %></h3>
       <%= image_tag("screenshot/detail.png", class: "screenshot") %>
       <%= image_tag("screenshot/profile.png", class: "screenshot") %>
       <%= image_tag("screenshot/settings.png", class: "screenshot") %>
@@ -15,20 +15,20 @@
   </div>
   <div class="app-description">
     <div class="description gray-back">
-      <h3>対応機能</h3>
+      <h3><%= t(".feature") %></h3>
       <table class="functions">
 	<tr>
 	  <td>
 	    <p><%= fa_icon "twitter" %></p>
-	    <h4>Userstream対応</h4>
+	    <h4><%= t(".userstream") %></h4>
 	  </td>
 	  <td>
 	    <p><%= fa_icon "bell" %></p>
-	    <h4>プッシュ通知</h4>
+	    <h4><%= t(".push_notification") %></h4>
 	  </td>
 	  <td>
 	    <p><%= fa_icon "comments" %></p>
-	    <h4>DirectMessage対応</h4>
+	    <h4><%= t(".direct_message") %></h4>
 	  </td>
 	</tr>
       </table>
@@ -36,8 +36,8 @@
   </div>
   <div class="app-description">
     <div class="description">
-      <h3>スワイプでリストを切り替え</h3>
-      <p>自分でリストの並び順をカスタマイズして、スワイプでリスト間の移動ができます。</p>
+      <h3><%= t(".swipe.title") %></h3>
+      <p><%= t(".swipe.description") %></p>
       <%= image_tag("screenshot/list.png", class: "screenshot") %>
       <%= image_tag("screenshot/list1.png", class: "screenshot") %>
       <%= image_tag("screenshot/list2.png", class: "screenshot") %>
