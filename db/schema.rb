@@ -14,7 +14,8 @@
 ActiveRecord::Schema.define(version: 20170111162016) do
 
   create_table "helps", force: :cascade do |t|
-    t.string   "title",      limit: 255
+    t.text     "title_en",   limit: 65535
+    t.text     "title_ja",   limit: 65535
     t.text     "body_en",    limit: 65535
     t.text     "body_ja",    limit: 65535
     t.string   "image",      limit: 255
