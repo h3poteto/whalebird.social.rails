@@ -33,3 +33,17 @@ footer {
     }
   }
 }
+
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+  border: 1px solid #4582ec;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.dropdown-menu {
+  background-color: rgba(255, 255, 255, 0);
+  li a:hover, li a:visited, li a:focus {
+    background-color: #4582ec;
+  }
+}

@@ -42,7 +42,7 @@
     <%= yield %>
 
     <footer>
-      <p>&copy; 2014-<%= Time.current.year %> Akira Fukushima</p>
+      <p>&copy; 2014-<%= Time.current.year %> <%= link_to "@h3_poteto", "https://twitter.com/h3_poteto" %></p>
     </footer>
     <% if Rails.env.production? %>
       <%= render "layouts/google_analytics" %>
