@@ -69,5 +69,16 @@ namespace :deploy do
     end
   end
 
+  task :clear_cache do
+    on roles(:app) do |host|
+      within release_path do
+        with rails_env: fetch(:rails_env) do
+          execute :rake, "tmp:cache:clear"
+        end
+      end
+    end
+  end
+
   before :starting, 'deploy:upload'
+  after "deploy:restart", "deploy:clear_cache"
 end

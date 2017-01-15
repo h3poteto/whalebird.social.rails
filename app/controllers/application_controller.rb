@@ -21,7 +21,7 @@ class ApplicationController < ActionController::Base
 
   def caches_action_by_request(app)
     #コントローラー名/アクション名_端末名でアクションキャッシュ
-    cache_path="#{app.params[:controller]}/#{app.params[:action]}"
+    cache_path="#{app.params[:controller]}/#{app.params[:action]}/#{@locale}"
     if app.request.mobile?
       "#{cache_path}_mobile"
     elsif app.request.smart_phone?

@@ -61,7 +61,7 @@
 #   }
 
 set :stage, :production
-server 'whalebird.org',
+server '52.196.238.162',
   user: 'ubuntu',
   roles: %w{app web db},
   ssh_options: {
