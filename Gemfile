@@ -41,7 +41,6 @@ gem 'unicorn'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-gem 'figaro', '<= 0.7.0'
 gem 'config'
 gem 'i18n_generators'
 gem 'simple_form'
