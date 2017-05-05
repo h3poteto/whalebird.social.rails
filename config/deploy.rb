@@ -63,6 +63,5 @@ namespace :deploy do
     end
   end
 
-  before :starting, 'deploy:upload'
   after "deploy:restart", "deploy:clear_cache"
 end
