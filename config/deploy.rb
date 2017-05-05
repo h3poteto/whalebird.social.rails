@@ -26,9 +26,6 @@ set :log_level, :debug
 # Default value for :pty is false
 set :pty, true
 
-# Default value for :linked_files is []
-append :linked_files, 'config/application.yml'
-
 # Default value for linked_dirs is []
 append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets'
 
@@ -56,19 +53,6 @@ namespace :deploy do
     invoke 'unicorn:restart'
   end
 
-  desc 'Upload local config yml'
-  task :upload do
-    on roles(:app) do |host|
-      unless test "[ -d #{shared_path}/config ]"
-        execute "mkdir -p #{shared_path}/config"
-      end
-      unless test "[ -d #{shared_path}/config/settings ]"
-        execute "mkdir -p #{shared_path}/config/settings"
-      end
-      upload!('config/application.production.yml', "#{shared_path}/config/application.yml")
-    end
-  end
-
   task :clear_cache do
     on roles(:app) do |host|
       within release_path do
@@ -79,6 +63,5 @@ namespace :deploy do
     end
   end
 
-  before :starting, 'deploy:upload'
   after "deploy:restart", "deploy:clear_cache"
 end
