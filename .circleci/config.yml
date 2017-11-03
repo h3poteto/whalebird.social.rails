@@ -67,7 +67,7 @@ jobs:
       - run:
           name: Install aws command
           command: |
-            apt-get update && apt-get install -y python-pip
+            apt-get update && apt-get install -y python2.7-dev python-pip
             pip install awscli
       - run:
           name: Build and push
