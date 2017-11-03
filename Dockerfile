@@ -13,8 +13,8 @@ COPY . /usr/src/app
 USER root
 RUN chown -R rails:rails /usr/src/app
 USER rails
-RUN bundle install
-
-
+RUN set -x \
+  && bundle install --jobs=4 \
+  && bundle exec rake assets:precompile RAILS_ENV=production
 
 CMD bash -l -c "bundle exec puma -C config/puma.rb"
