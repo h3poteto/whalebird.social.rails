@@ -35,7 +35,7 @@ services:
     ports:
       - '80:80'
       - '443:443'
-    depens_on:
+    depends_on:
       - rails
     volumes:
       - ./ssl_certs:/var/lib/https-portal
