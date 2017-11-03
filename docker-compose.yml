@@ -13,7 +13,7 @@ services:
     environment:
       MYSQL_ALLOW_EMPTY_PASSWORD: "true"
   rails:
-    image: h3poteto/rails
+    image: h3poteto/rails:2.4.2
     environment:
       BUNDLE_APP_CONFIG: /usr/src/app/.bundle
     env_file: .docker-env
