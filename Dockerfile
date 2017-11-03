@@ -7,15 +7,12 @@ ENV PORT 3000
 
 EXPOSE 3000:3000
 
-
 WORKDIR /usr/src/app
 
-COPY --chown=rails:rails Gemfile /usr/src/app
-COPY --chown=rails:rails Gemfile.lock /usr/src/app
-
-RUN bundle install
-
-COPY --chown=rails:rails . /usr/src/app
+COPY . /usr/src/app
+USER root
+RUN chown -R rails:rails /usr/src/app
+USER rails
 RUN bundle install
 
 
