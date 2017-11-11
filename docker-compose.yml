@@ -7,13 +7,13 @@ services:
   mysql:
     image: mysql:5.7
     ports:
-      - "3306:3306"
+      - "3309:3306"
     volumes_from:
       - storage
     environment:
       MYSQL_ALLOW_EMPTY_PASSWORD: "true"
   rails:
-    image: h3poteto/rails:2.4.2
+    image: h3poteto/rails:v2.3.4
     environment:
       BUNDLE_APP_CONFIG: /usr/src/app/.bundle
     env_file: .docker-env
