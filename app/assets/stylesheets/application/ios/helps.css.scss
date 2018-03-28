@@ -21,23 +21,23 @@ body[data-controller="ios/helps"] {
         .title {
           color: #4582ec;
           font-size: 20px;
-          padding: 25px 0 0 0;
           font-weight: bold;
+          padding: 25px 0 0;
           text-align: center;
         }
         .left {
           float: left;
+          margin-bottom: 30px;
           max-width: 550px;
           padding-top: 50px;
-          margin-bottom: 30px;
         }
         .right {
           float: right;
           max-width: 300px;
         }
         .screenshot {
-          width: 200px;
           padding: 20px;
+          width: 200px;
         }
       }
     }

@@ -18,3 +18,5 @@ linters:
   ColorVariable:
     enabled: false
 
+  QualifyingElement:
+    enabled: false
