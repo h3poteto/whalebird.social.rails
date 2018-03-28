@@ -3,3 +3,7 @@ ja:
     header:
       help: "ヘルプ"
       contact: "お問い合わせ"
+      notice:
+        title: "お知らせ"
+        body_html: "<strong>iOS用TwitterクライアントであるWhalebirdは2018年6月20日を持ってサービスを終了します。</strong>6月20日にアップデートされるTwitter側APIの仕様変更により、現状の機能を維持して開発していくことが不可能になる見込みです。Twitter側の対応状況により予定が変更になる可能性はありますが、今のところは終了予定です。今後は<a href='/desktop'>Mastodonクライアント</a>として新たに開発を続けていきます。ご利用ありがとうございました。"
+
