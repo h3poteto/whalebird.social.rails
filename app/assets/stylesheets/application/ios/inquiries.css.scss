@@ -13,6 +13,11 @@ body[data-controller="ios/inquiries"] {
     text-align: center;
     max-width: 1000px;
     margin: 100px auto;
+
+    form {
+      margin-left: 8px;
+    }
+
     textarea {
       height: 150px;
     }

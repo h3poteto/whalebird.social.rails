@@ -24,14 +24,11 @@ body[data-controller="ios/contents"] {
     .description {
       padding-top: 60px;
       padding-bottom: 60px;
-      table.functions {
-        margin: 0 auto;
-        td {
-          padding: 30px 50px;
-          i {
-            font-size: 40px;
-          }
-        }
+
+      .function {
+        display: inline-block;
+        font-size: 64px;
+        padding: 0 32px 0 32px;
       }
     }
   }
