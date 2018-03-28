@@ -22,7 +22,7 @@ class Ios::InquiriesController < IosController
     respond_to do |format|
       if @inquiry.save
         session[:inquiry_id] = @inquiry.id
-        format.html { redirect_to @inquiry, notice: 'お問い合わせを受け付けました' }
+        format.html { redirect_to @inquiry, notice: "お問い合わせを受け付けました" }
         format.json { render :show, status: :created, location: @inquiry }
       else
         format.html { render :new }

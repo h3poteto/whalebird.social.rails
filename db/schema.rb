@@ -12,21 +12,21 @@
 
 ActiveRecord::Schema.define(version: 20_170_111_162_016) do
 
-  create_table 'helps', force: :cascade do |t|
-    t.text     'title_en',   limit: 65_535
-    t.text     'title_ja',   limit: 65_535
-    t.text     'body_en',    limit: 65_535
-    t.text     'body_ja',    limit: 65_535
-    t.string   'image',      limit: 255
-    t.datetime 'created_at'
-    t.datetime 'updated_at'
+  create_table "helps", force: :cascade do |t|
+    t.text     "title_en",   limit: 65_535
+    t.text     "title_ja",   limit: 65_535
+    t.text     "body_en",    limit: 65_535
+    t.text     "body_ja",    limit: 65_535
+    t.string   "image",      limit: 255
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
-  create_table 'inquiries', force: :cascade do |t|
-    t.string   'email',      limit: 255
-    t.text     'body',       limit: 65_535
-    t.datetime 'created_at'
-    t.datetime 'updated_at'
+  create_table "inquiries", force: :cascade do |t|
+    t.string   "email",      limit: 255
+    t.text     "body",       limit: 65_535
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end

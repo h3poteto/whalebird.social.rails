@@ -1,5 +1,3 @@
-inherit_from: .rubocop_todo.yml
-
 Layout/AlignHash:
   Exclude:
     - 'config/initializers/simple_form.rb'
@@ -38,6 +36,9 @@ Style/EmptyMethod:
 
 Style/ExpandPathArguments:
   Enabled: false
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
 
 Style/TrailingCommaInHashLiteral:
   Exclude:

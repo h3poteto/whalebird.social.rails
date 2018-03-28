@@ -3,7 +3,7 @@
 class InquiryNotifier
   def self.slack(id)
     inquiry = Inquiry.find(id)
-    notifier = Slack::Notifier.new(ENV['SLACK_WEBHOOK_URL'])
+    notifier = Slack::Notifier.new(ENV["SLACK_WEBHOOK_URL"])
     body = <<-BODY.strip_heredoc
       ----------------
       お問い合わせがありました
