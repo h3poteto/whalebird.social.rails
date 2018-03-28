@@ -11,6 +11,8 @@ Rails.application.routes.draw do
     namespace :desktop do
       resources :contents, only: :index
     end
+    get "/ios" => "ios/contents#index"
+    get "/desktop" => "desktop/contents#index"
     root to: "desktop/contents#index"
   end
 end

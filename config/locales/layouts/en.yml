@@ -3,3 +3,6 @@ en:
     header:
       help: "Help"
       contact: "Contact"
+      notice:
+        title: "Notice"
+        body_html: "<strong>Whalebird which is a Twitter client for iOS will close at 20th June 2018.</strong> Maybe I will not be able to continue to development this application, due to the update of Twitter API which will come on June 20. There is a possiblity to change the schedule according to Twitter's response, but now I will close. From now on I continue to development <a href='/desktop'>a Mastodon client</a>. Thank you for using."
