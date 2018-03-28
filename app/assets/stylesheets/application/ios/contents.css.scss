@@ -1,4 +1,4 @@
-body[data-controller="contents"] {
+body[data-controller="ios/contents"] {
   .main-board {
     text-align: center;
     width: 100%;
@@ -25,13 +25,13 @@ body[data-controller="contents"] {
       padding-top: 60px;
       padding-bottom: 60px;
       table.functions {
-	margin: 0 auto;
-	td {
-	  padding: 30px 50px;
-	  i {
-	    font-size: 40px;
-	  }
-	}
+        margin: 0 auto;
+        td {
+          padding: 30px 50px;
+          i {
+            font-size: 40px;
+          }
+        }
       }
     }
   }

@@ -1,4 +1,4 @@
-body[data-controller="inquiries"] {
+body[data-controller="ios/inquiries"] {
   .header {
     padding-top: 100px;
     padding-bottom: 50px;
@@ -20,7 +20,7 @@ body[data-controller="inquiries"] {
       margin: 10px auto;
       max-width: 700px;
       th {
-	width: 180px;
+        width: 180px;
       }
     }
   }

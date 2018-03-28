@@ -1,5 +1,5 @@
 # coding: utf-8
-class InquiriesController < ApplicationController
+class Ios::InquiriesController < IosController
 
   # GET /inquiries/1
   # GET /inquiries/1.json

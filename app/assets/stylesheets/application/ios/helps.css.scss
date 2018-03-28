@@ -1,4 +1,4 @@
-body[data-controller="helps"] {
+body[data-controller="ios/helps"] {
   .header {
     padding-top: 100px;
     padding-bottom: 50px;
@@ -19,25 +19,25 @@ body[data-controller="helps"] {
       .tips {
         border-bottom: 1px solid #dcdcdc;
         .title {
-	  color: #4582ec;
-	  font-size: 20px;
-	  padding: 25px 0 0 0;
-	  font-weight: bold;
-	  text-align: center;
+          color: #4582ec;
+          font-size: 20px;
+          padding: 25px 0 0 0;
+          font-weight: bold;
+          text-align: center;
         }
         .left {
-	  float: left;
-	  max-width: 550px;
-	  padding-top: 50px;
+          float: left;
+          max-width: 550px;
+          padding-top: 50px;
           margin-bottom: 30px;
         }
         .right {
-	  float: right;
-	  max-width: 300px;
+          float: right;
+          max-width: 300px;
         }
         .screenshot {
-	  width: 200px;
-	  padding: 20px;
+          width: 200px;
+          padding: 20px;
         }
       }
     }
@@ -51,7 +51,7 @@ body[data-controller="helps"] {
         position: relative;
         ul {
           li {
-	    color: #4582ec;
+            color: #4582ec;
           }
         }
       }

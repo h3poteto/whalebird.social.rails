@@ -1,0 +1,10 @@
+ja:
+  ios:
+    inquiries:
+      new:
+        title: "お問い合わせ"
+        submit: "送信"
+
+      show:
+        title: "お問い合わせ"
+        success: "以下の内容でお問い合わせを受け付けました"

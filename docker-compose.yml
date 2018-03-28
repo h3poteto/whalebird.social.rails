@@ -16,6 +16,9 @@ services:
     image: h3poteto/rails:v2.3.4
     environment:
       BUNDLE_APP_CONFIG: /usr/src/app/.bundle
+      SERVER_EMAIL: $SERVER_EMAIL
+      WEB_EMAIL: $WEB_EMAIL
+      SLACK_WEBHOOK_URL: $SLACK_WEBHOOK_URL
     volumes:
       - ~/.ssh:/home/rails/.ssh
       - .:/usr/src/app
