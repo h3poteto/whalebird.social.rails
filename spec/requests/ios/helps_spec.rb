@@ -2,10 +2,10 @@
 
 require "rails_helper"
 
-RSpec.describe "Inquiries", type: :request do
-  describe "GET /inquiry/new" do
+RSpec.describe "Ios::Helps", type: :request do
+  describe "GET /ios/helps" do
     it "works! (now write some real specs)" do
-      get new_inquiry_path
+      get ios_helps_path
       expect(response).to have_http_status(200)
     end
   end

@@ -1,3 +1,4 @@
+# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -10,13 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20_170_111_162_016) do
+ActiveRecord::Schema.define(version: 20170111162016) do
 
   create_table "helps", force: :cascade do |t|
-    t.text     "title_en",   limit: 65_535
-    t.text     "title_ja",   limit: 65_535
-    t.text     "body_en",    limit: 65_535
-    t.text     "body_ja",    limit: 65_535
+    t.text     "title_en",   limit: 65535
+    t.text     "title_ja",   limit: 65535
+    t.text     "body_en",    limit: 65535
+    t.text     "body_ja",    limit: 65535
     t.string   "image",      limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -24,7 +25,7 @@ ActiveRecord::Schema.define(version: 20_170_111_162_016) do
 
   create_table "inquiries", force: :cascade do |t|
     t.string   "email",      limit: 255
-    t.text     "body",       limit: 65_535
+    t.text     "body",       limit: 65535
     t.datetime "created_at"
     t.datetime "updated_at"
   end
