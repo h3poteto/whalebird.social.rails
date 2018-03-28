@@ -1,6 +1,5 @@
 en:
   layouts:
     header:
-      notice: "Notice"
       help: "Help"
       contact: "Contact"

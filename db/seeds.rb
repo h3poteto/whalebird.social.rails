@@ -1,6 +1,4 @@
-# -*- coding: utf-8 -*-
 ActiveRecord::Base.connection.execute("TRUNCATE TABLE helps")
-
 
 Help.create(
   [

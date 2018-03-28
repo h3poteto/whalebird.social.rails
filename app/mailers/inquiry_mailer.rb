@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 class InquiryMailer < ActionMailer::Base
   default from: ENV["SERVER_EMAIL"]
 

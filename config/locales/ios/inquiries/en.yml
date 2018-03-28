@@ -1,0 +1,11 @@
+en:
+  ios:
+    inquiries:
+      new:
+        title: "Contact"
+        submit: "Submit"
+
+      show:
+        title: "Contact"
+        success: "The inquiry accepted with the following contents"
+

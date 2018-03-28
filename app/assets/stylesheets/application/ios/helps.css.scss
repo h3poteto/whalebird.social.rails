@@ -1,0 +1,64 @@
+body[data-controller="ios/helps"] {
+  .header {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    width: 100%;
+    background: image-url("main_background.jpg") no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    text-align: center;
+    border-bottom: solid 1px #dcdcdc;
+  }
+  .page {
+    max-width: 1000px;
+    margin: 20px auto 0;
+    position: relative;
+    .helps {
+      max-width: 800px;
+      float: left;
+      .tips {
+        border-bottom: 1px solid #dcdcdc;
+        .title {
+          color: #4582ec;
+          font-size: 20px;
+          font-weight: bold;
+          padding: 25px 0 0;
+          text-align: center;
+        }
+        .left {
+          float: left;
+          margin-bottom: 30px;
+          max-width: 550px;
+          padding-top: 50px;
+        }
+        .right {
+          float: right;
+          max-width: 300px;
+        }
+        .screenshot {
+          padding: 20px;
+          width: 200px;
+        }
+      }
+    }
+    .sidebar-wrapper {
+      float: right;
+      width: 200px;
+      position: relative;
+      .sidebar {
+        float: right;
+        width: 200px;
+        position: relative;
+        ul {
+          li {
+            color: #4582ec;
+          }
+        }
+      }
+      .fixed {
+        position: fixed;
+        top: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+en:
+  ios:
+    contents:
+      index:
+        title: "Whalebird"
+        description: "Whalebird is a simple design twitter client"
+        feature: "Feature"
+        userstream: "Userstream"
+        push_notification: "Push Notification"
+        direct_message: "Direct Message"
+        swipe:
+          title: "Switch list timeline using swipe motion"
+          description: "This twitter client can customize sort of your lists, and switch these lists with swipe motion."
+
