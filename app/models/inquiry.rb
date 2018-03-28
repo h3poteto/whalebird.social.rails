@@ -4,9 +4,8 @@ class Inquiry < ActiveRecord::Base
   validates :body, presence: true
 
   def send_admin
-    if Rails.env.production?
-      InquiryMailer.send_admin(id).deliver
-      InquiryNotifier.slack(id)
-    end
+    return unless Rails.env.production?
+    InquiryMailer.send_admin(id).deliver
+    InquiryNotifier.slack(id)
   end
 end

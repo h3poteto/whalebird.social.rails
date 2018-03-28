@@ -22,7 +22,6 @@ Rails.application.configure do
   # Disable Rails's static asset server (Apache or nginx will already do this).
   config.serve_static_files = ENV['RAILS_SERVE_STATIC_FILES'].present?
 
-
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
   # config.assets.css_compressor = :sass
@@ -76,17 +75,17 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
-  config.action_mailer.default_url_options = { :host => Settings.site.fqdn }
+  config.action_mailer.default_url_options = { host: Settings.site.fqdn }
   ActionMailer::Base.delivery_method = :smtp
   ActionMailer::Base.perform_deliveries = true
   ActionMailer::Base.raise_delivery_errors = true
   ActionMailer::Base.smtp_settings = {
-    :enable_starttls_auto => true,
-    :address => 'smtp.gmail.com',
-    :port => 587,
-    :domain => 'gmail.com',
-    :authentication => :plain,
-    :user_name => ENV["SERVER_EMAIL"],
-    :password => ENV["SERVER_EMAIL_PASSWORD"]
+    enable_starttls_auto: true,
+    address: 'smtp.gmail.com',
+    port: 587,
+    domain: 'gmail.com',
+    authentication: :plain,
+    user_name: ENV['SERVER_EMAIL'],
+    password: ENV['SERVER_EMAIL_PASSWORD']
   }
 end

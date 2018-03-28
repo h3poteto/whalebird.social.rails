@@ -1,6 +1,6 @@
-# coding: utf-8
-class Ios::InquiriesController < IosController
+# frozen_string_literal: true
 
+class Ios::InquiriesController < IosController
   # GET /inquiries/1
   # GET /inquiries/1.json
   def show
@@ -22,8 +22,7 @@ class Ios::InquiriesController < IosController
     respond_to do |format|
       if @inquiry.save
         session[:inquiry_id] = @inquiry.id
-        format.html { redirect_to @inquiry, notice: 'お問い合わせを受け付けました
-' }
+        format.html { redirect_to @inquiry, notice: 'お問い合わせを受け付けました' }
         format.json { render :show, status: :created, location: @inquiry }
       else
         format.html { render :new }
@@ -34,8 +33,8 @@ class Ios::InquiriesController < IosController
 
   private
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def inquiry_params
-      params.require(:inquiry).permit(:email, :body)
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def inquiry_params
+    params.require(:inquiry).permit(:email, :body)
+  end
 end

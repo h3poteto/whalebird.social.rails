@@ -1,4 +1,5 @@
-# coding: utf-8
+# frozen_string_literal: true
+
 class ApplicationController < ActionController::Base
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
@@ -14,7 +15,7 @@ class ApplicationController < ActionController::Base
     @locale ||= params[:locale] || I18n.default_locale
   end
 
-  def default_url_options(options={})
+  def default_url_options(options = {})
     options.merge(locale: locale)
   end
 end
