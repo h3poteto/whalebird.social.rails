@@ -11,10 +11,10 @@
  * file per style scope.
  *
  */
-@import "bootswatch/litera/variables";
+@import "bootswatch/flatly/variables";
 @import "bootstrap";
-@import "bootswatch/litera/bootswatch";
-@import "./ios/*";
+@import "bootswatch/flatly/bootswatch";
+@import "./desktop/*";
 
 footer {
   border-top: solid 1px #dddddd;

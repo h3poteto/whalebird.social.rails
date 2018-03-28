@@ -1,0 +1,22 @@
+en:
+  desktop:
+    contents:
+      index:
+        title: "Whalebird for Mastodon"
+        short_description: "Whalebird is a Mastodon client for desktop application"
+        download:
+          msi: "whalebird 0.2.1(msi)"
+          dmg: "Whalebird 0.2.1(dmg)"
+          deb: "Whalebird 0.2.1(deb)"
+          rpm: "Whalebird 0.2.1(rpm)"
+          file: "Whalebird 0.2.1(file)"
+        description:
+          desktop_notification: "Desktop Notification"
+          streaming: "Streaming"
+          shortcut: "Many shortcuts"
+          home:
+            title: "UI like Slack"
+            body: "This client can change accounts. And these timelines are updated using streaming. When you get a notification, it is notified your desktop."
+          jump:
+            title: "Many shortcuts"
+            body: "This client has many shortcuts, so you can control this application with these shortcuts. And you can jump another timeline to type Ctrl + k which is jump function."

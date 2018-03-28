@@ -40,8 +40,8 @@ gem "puma", "~> 3.0"
 # gem 'debugger', group: [:development, :test]
 
 gem "actionpack-action_caching"
+gem "browser"
 gem "config"
-gem "font-awesome-rails"
 gem "i18n_generators"
 gem "simple_form"
 gem "slack-notifier"

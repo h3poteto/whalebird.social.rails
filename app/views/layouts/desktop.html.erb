@@ -12,8 +12,7 @@
     <!--[if lt IE 9]>
       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.1/html5shiv.js" type="text/javascript"></script>
     <![endif]-->
-
-    <%= stylesheet_link_tag "ios", :media => "all" %>
+    <%= stylesheet_link_tag "desktop", :media => "all" %>
 
     <!-- For third-generation iPad with high-resolution Retina display: -->
     <!-- Size should be 144 x 144 pixels -->
@@ -35,15 +34,15 @@
     <!-- Size should be 32 x 32 pixels -->
     <%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>
 
-    <%= javascript_include_tag "ios" %>
+    <%= javascript_include_tag "desktop" %>
   </head>
   <body data-controller=<%= params[:controller] %> data-action=<%= params[:action] %>>
 
-    <%= render "layouts/header_ios" %>
+    <%= render "layouts/header_desktop" %>
     <%= yield %>
 
     <footer>
-      <p>&copy; 2014-<%= Time.current.year %> <%= link_to "@h3_poteto", "https://twitter.com/h3_poteto" %></p>
+      <p>&copy; 2018 <%= link_to "@h3_poteto@mstdn.jp", "https://mstdn.jp/@h3_poteto" %></p>
     </footer>
     <% if Rails.env.production? %>
       <%= render "layouts/google_analytics" %>

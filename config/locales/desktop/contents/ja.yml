@@ -1,0 +1,23 @@
+ja:
+  desktop:
+    contents:
+      index:
+        title: "Whalebird for Mastodon"
+        short_description: "Whalebirdはデスクトップ向けのMastodonクライアントです"
+        download:
+          msi: "whalebird 0.2.1(msi)"
+          dmg: "Whalebird 0.2.1(dmg)"
+          deb: "Whalebird 0.2.1(deb)"
+          rpm: "Whalebird 0.2.1(rpm)"
+          file: "Whalebird 0.2.1(ファイル)"
+        description:
+          desktop_notification: "デスクトップ通知"
+          streaming: "ストリーミング更新"
+          shortcut: "豊富なショートカット"
+          home:
+            title: "Slack風のUI"
+            body: "Slack風のUIで複数アカウントの切り替えも可能に。タイムラインはストリーミング更新され、デスクトップ通知も可能。"
+          jump:
+            title: "豊富なショートカット"
+            body: "豊富なショートカットでクライアントを操作可能。ジャンプ機能(Ctrl + k)によって他のタイムラインへのジャンプも実現しました。"
+

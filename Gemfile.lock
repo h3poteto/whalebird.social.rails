@@ -56,6 +56,7 @@ GEM
     bootswatch (4.0.0)
       autoprefixer-rails (>= 6.0.3)
       sass (>= 3.5.2)
+    browser (2.5.3)
     builder (3.2.3)
     byebug (9.0.6)
     capybara (2.10.2)
@@ -84,8 +85,6 @@ GEM
     erubis (2.7.0)
     execjs (2.7.0)
     ffi (1.9.23)
-    font-awesome-rails (4.7.0.0)
-      railties (>= 3.2, < 5.1)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
     hike (1.2.3)
@@ -245,10 +244,10 @@ DEPENDENCIES
   binding_of_caller
   bootstrap (~> 4.0)
   bootswatch (~> 4.0)
+  browser
   capybara
   coffee-rails (~> 4.2.1)
   config
-  font-awesome-rails
   i18n_generators
   jbuilder (~> 2.0)
   jquery-rails (~> 4.3)

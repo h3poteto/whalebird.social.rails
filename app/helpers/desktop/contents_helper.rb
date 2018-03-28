@@ -1,0 +1,2 @@
+module Desktop::ContentsHelper
+end
