@@ -15,7 +15,7 @@
   <div class="helps">
     <% @helps.each do |help| %>
       <div class="tips" id=<%= "help_" + help.id.to_s %>>
-        <p class="title"><%= fa_icon "info-circle" %><%= help.title %></p>
+        <p class="title"><i class="fas fa-info-circle"></i><%= help.title %></p>
         <div class="left"><%= help.body %></div>
         <% if help.image.present? %>
           <div class="right"><%= image_tag(help.image, class: "screenshot") %></div>

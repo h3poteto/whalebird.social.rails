@@ -1,0 +1,86 @@
+<div class="main-board">
+  <div class="main-title">
+    <h1><%= t(".title") %></h1>
+    <h5 class="short-description"><%= t(".short_description") %></h5>
+    <div class="downloads">
+      <% if browser.platform.windows? %>
+        <a href="https://github.com/h3poteto/whalebird-desktop/releases/download/0.2.1/Whalebird-0.2.1-windows-x64.msi">
+          <button type="button" class="btn btn-info btn-lg">
+            <%= t(".download.msi") %>
+          </button>
+        </a>
+      <% elsif browser.platform.mac? %>
+        <a href="https://github.com/h3poteto/whalebird-desktop/releases/download/0.2.1/Whalebird-0.2.1-darwin-x64.dmg">
+          <button type="button" class="btn btn-info btn-lg">
+            <%= t(".download.dmg") %>
+          </button>
+        </a>
+      <% elsif browser.platform.linux? %>
+        <a href="https://github.com/h3poteto/whalebird-desktop/releases/download/0.2.1/Whalebird-0.2.1-linux-x64.deb">
+          <button type="button" class="btn btn-info btn-lg">
+            <i class="fas fa-download"></i> <%= t(".download.deb") %>
+          </button>
+        </a>
+        <a href="https://github.com/h3poteto/whalebird-desktop/releases/download/0.2.1/Whalebird-0.2.1-linux-x64.rpm"><button type="button" class="btn btn-info btn-lg">
+            <i class="fas fa-download"></i> <%= t(".download.rpm") %>
+          </button>
+        </a>
+        <a href="https://github.com/h3poteto/whalebird-desktop/releases/download/0.2.1/Whalebird-0.2.1-linux-x64.tar.bz2">
+          <button type="button" class="btn btn-info btn-lg">
+            <i class="fas fa-download"></i> <%= t(".download.file") %>
+          </button>
+        </a>
+      <% end %>
+    </div>
+  </div>
+</div>
+<div class="description bg-gray">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="icon">
+          <p><i class="fas fa-bell"></i></p>
+          <h4><%= t(".description.desktop_notification") %></h4>
+        </div>
+      </div>
+      <div class="col">
+        <div class="icon">
+          <p><i class="fas fa-comments"></i></p>
+          <h4><%= t(".description.streaming") %></h4>
+        </div>
+      </div>
+      <div class="col">
+        <div class="icon">
+          <p><i class="fas fa-keyboard"></i></p>
+          <h4><%= t(".description.shortcut") %></h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="description">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <%= image_tag "desktop/screenshot/home.png" %>
+      </div>
+      <div class="col">
+        <h3><%= t(".description.home.title") %></h3>
+        <p class="body"><%= t(".description.home.body") %></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="description">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h3><%= t(".description.jump.title") %></h3>
+        <p class="body"><%= t(".description.jump.body") %></p>
+      </div>
+      <div class="col">
+        <%= image_tag "desktop/screenshot/jump.png" %>
+      </div>
+    </div>
+  </div>
+</div>

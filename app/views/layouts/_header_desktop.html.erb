@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+    <%= link_to "Whalebird for Mastodon", root_path, class: "navbar-brand" %>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation" style="">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor03">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <%#= link_to t('layouts.header.contact'), root_path, class: "nav-link" %>
+        </li>
+      </ul>
+      <div class="dropdown">
+        <button class="btn btn-outline-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <%= I18n.t("locale_name") %>
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <% I18n.available_locales.each do |locale| %>
+              <li><%= link_to I18n.t("locale_name", locale: locale), i18n_url_for(params.merge(locale: locale)), class: "dropdown-item" %></li>
+            <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

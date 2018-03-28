@@ -7,6 +7,10 @@ Rails.application.routes.draw do
       resources :contents, only: :index
       resources :helps, only: :index
     end
-    root to: "ios/contents#index"
+
+    namespace :desktop do
+      resources :contents, only: :index
+    end
+    root to: "desktop/contents#index"
   end
 end
