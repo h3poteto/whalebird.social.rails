@@ -11,11 +11,11 @@
  * file per style scope.
  *
  */
-@import "bootswatch/flatly/variables";
+@import "bootswatch/litera/variables";
 @import "bootstrap";
-@import "bootswatch/flatly/bootswatch";
+@import "bootswatch/litera/bootswatch";
 @import "font-awesome";
-@import "./application/ios/*";
+//@import "./application/ios/*.scss";
 
 footer {
   border-top: solid 1px #dddddd;
@@ -23,4 +23,27 @@ footer {
   padding-top: 100px;
   padding-bottom: 30px;
   color: #acacac;
+}
+
+.navbar {
+  li {
+    a:hover, a:visited, a:focus {
+      background: none;
+      border: 1px solid transparent;
+    }
+  }
+}
+
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+  border: 1px solid #4582ec;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.dropdown-menu {
+  background-color: rgba(255, 255, 255, 0);
+  li a:hover, li a:visited, li a:focus {
+    background-color: #4582ec;
+  }
 }
