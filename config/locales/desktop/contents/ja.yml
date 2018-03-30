@@ -5,11 +5,11 @@ ja:
         title: "Whalebird for Mastodon"
         short_description: "Whalebirdはデスクトップ向けのMastodonクライアントです"
         download:
-          msi: "whalebird 0.2.1(msi)"
-          dmg: "Whalebird 0.2.1(dmg)"
-          deb: "Whalebird 0.2.1(deb)"
-          rpm: "Whalebird 0.2.1(rpm)"
-          file: "Whalebird 0.2.1(ファイル)"
+          msi: "Whalebird 0.2.2(msi)"
+          dmg: "Whalebird 0.2.2(dmg)"
+          deb: "Whalebird 0.2.2(deb)"
+          rpm: "Whalebird 0.2.2(rpm)"
+          file: "Whalebird 0.2.2(ファイル)"
         description:
           desktop_notification: "デスクトップ通知"
           streaming: "ストリーミング更新"

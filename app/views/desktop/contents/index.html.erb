@@ -4,28 +4,29 @@
     <h5 class="short-description"><%= t(".short_description") %></h5>
     <div class="downloads">
       <% if browser.platform.windows? %>
-        <a href="https://github.com/h3poteto/whalebird-desktop/releases/download/0.2.1/Whalebird-0.2.1-windows-x64.msi">
+        <a href="https://github.com/h3poteto/whalebird-desktop/releases/download/0.2.2/Whalebird-0.2.2-windows-x64.msi">
           <button type="button" class="btn btn-info btn-lg">
-            <%= t(".download.msi") %>
+            <i class="fas fa-download"></i> <%= t(".download.msi") %>
           </button>
         </a>
       <% elsif browser.platform.mac? %>
-        <a href="https://github.com/h3poteto/whalebird-desktop/releases/download/0.2.1/Whalebird-0.2.1-darwin-x64.dmg">
+        <a href="https://github.com/h3poteto/whalebird-desktop/releases/download/0.2.2/Whalebird-0.2.2-darwin-x64.dmg">
           <button type="button" class="btn btn-info btn-lg">
-            <%= t(".download.dmg") %>
+            <i class="fas fa-download"></i> <%= t(".download.dmg") %>
           </button>
         </a>
       <% elsif browser.platform.linux? %>
-        <a href="https://github.com/h3poteto/whalebird-desktop/releases/download/0.2.1/Whalebird-0.2.1-linux-x64.deb">
+        <a href="https://github.com/h3poteto/whalebird-desktop/releases/download/0.2.2/Whalebird-0.2.2-linux-x64.deb">
           <button type="button" class="btn btn-info btn-lg">
             <i class="fas fa-download"></i> <%= t(".download.deb") %>
           </button>
         </a>
-        <a href="https://github.com/h3poteto/whalebird-desktop/releases/download/0.2.1/Whalebird-0.2.1-linux-x64.rpm"><button type="button" class="btn btn-info btn-lg">
+        <a href="https://github.com/h3poteto/whalebird-desktop/releases/download/0.2.2/Whalebird-0.2.2-linux-x64.rpm">
+          <button type="button" class="btn btn-info btn-lg">
             <i class="fas fa-download"></i> <%= t(".download.rpm") %>
           </button>
         </a>
-        <a href="https://github.com/h3poteto/whalebird-desktop/releases/download/0.2.1/Whalebird-0.2.1-linux-x64.tar.bz2">
+        <a href="https://github.com/h3poteto/whalebird-desktop/releases/download/0.2.2/Whalebird-0.2.2-linux-x64.tar.bz2">
           <button type="button" class="btn btn-info btn-lg">
             <i class="fas fa-download"></i> <%= t(".download.file") %>
           </button>
