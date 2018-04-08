@@ -4,33 +4,73 @@
     <h5 class="short-description"><%= t(".short_description") %></h5>
     <div class="downloads">
       <% if browser.platform.windows? %>
-        <%= link_to t(".download.win.link") do %>
-          <button type="button" class="btn btn-info btn-lg">
-            <i class="fas fa-download"></i> <%= t(".download.win.title") %>
-          </button>
-        <% end %>
+        <div class="btn-group download-group" role="group">
+          <%= link_to t(".download.win.link") do %>
+            <button type="button" class="btn btn-info btn-lg download-button">
+              <i class="fas fa-download"></i> <%= t(".download.win.title") %>
+            </button>
+          <% end %>
+          <div class="btn-group" role="group">
+            <button id="btnGroupDrop1" type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+              <%= link_to t('.download.old'), "https://github.com/h3poteto/whalebird-desktop/releases", class: "dropdown-item" %>
+            </div>
+          </div>
+        </div>
       <% elsif browser.platform.mac? %>
-        <%= link_to t(".download.dmg.link") do %>
-          <button type="button" class="btn btn-info btn-lg">
-            <i class="fas fa-download"></i> <%= t(".download.dmg.title") %>
-          </button>
-        <% end %>
+        <div class="btn-group download-group" role="group">
+          <%= link_to t(".download.dmg.link") do %>
+            <button type="button" class="btn btn-info btn-lg download-button">
+              <i class="fas fa-download"></i> <%= t(".download.dmg.title") %>
+            </button>
+          <% end %>
+          <div class="btn-group" role="group">
+            <button id="btnGroupDrop1" type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+              <%= link_to t('.download.old'), "https://github.com/h3poteto/whalebird-desktop/releases", class: "dropdown-item" %>
+            </div>
+          </div>
+        </div>
       <% elsif browser.platform.linux? %>
-        <%= link_to t(".download.deb.link") do %>
-          <button type="button" class="btn btn-info btn-lg">
-            <i class="fas fa-download"></i> <%= t(".download.deb.title") %>
-          </button>
-        <% end %>
-        <%= link_to t(".download.rpm.link") do %>
-          <button type="button" class="btn btn-info btn-lg">
-            <i class="fas fa-download"></i> <%= t(".download.rpm.title") %>
-          </button>
-        <% end %>
-        <%= link_to t(".download.file.link") do %>
-          <button type="button" class="btn btn-info btn-lg">
-            <i class="fas fa-download"></i> <%= t(".download.file.title") %>
-          </button>
-        <% end %>
+        <div class="btn-group download-group" role="group">
+          <%= link_to t(".download.deb.link") do %>
+            <button type="button" class="btn btn-info btn-lg download-button">
+              <i class="fas fa-download"></i> <%= t(".download.deb.title") %>
+            </button>
+          <% end %>
+          <div class="btn-group" role="group">
+            <button id="btnGroupDrop1" type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+              <%= link_to t('.download.old'), "https://github.com/h3poteto/whalebird-desktop/releases", class: "dropdown-item" %>
+            </div>
+          </div>
+        </div>
+        <div class="btn-group download-group" role="group">
+          <%= link_to t(".download.rpm.link") do %>
+            <button type="button" class="btn btn-info btn-lg download-button">
+              <i class="fas fa-download"></i> <%= t(".download.rpm.title") %>
+            </button>
+          <% end %>
+          <div class="btn-group" role="group">
+            <button id="btnGroupDrop1" type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+              <%= link_to t('.download.old'), "https://github.com/h3poteto/whalebird-desktop/releases", class: "dropdown-item" %>
+            </div>
+          </div>
+        </div>
+        <div class="btn-group download-group" role="group">
+          <%= link_to t(".download.file.link") do %>
+            <button type="button" class="btn btn-info btn-lg download-button">
+              <i class="fas fa-download"></i> <%= t(".download.file.title") %>
+            </button>
+          <% end %>
+          <div class="btn-group" role="group">
+            <button id="btnGroupDrop1" type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+              <%= link_to t('.download.old'), "https://github.com/h3poteto/whalebird-desktop/releases", class: "dropdown-item" %>
+            </div>
+          </div>
+        </div>
       <% end %>
     </div>
   </div>
