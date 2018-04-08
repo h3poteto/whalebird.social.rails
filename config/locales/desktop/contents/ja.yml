@@ -5,11 +5,22 @@ ja:
         title: "Whalebird for Mastodon"
         short_description: "Whalebirdはデスクトップ向けのMastodonクライアントです"
         download:
-          msi: "Whalebird 0.2.2(msi)"
-          dmg: "Whalebird 0.2.2(dmg)"
-          deb: "Whalebird 0.2.2(deb)"
-          rpm: "Whalebird 0.2.2(rpm)"
-          file: "Whalebird 0.2.2(ファイル)"
+          win:
+            title: "Whalebird 0.3.1(exe)"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/0.3.1/Whalebird-0.3.1-windows-x64.exe"
+          dmg:
+            title: "Whalebird 0.3.1(dmg)"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/0.3.1/Whalebird-0.3.1-darwin-x64.dmg"
+          deb:
+            title: "Whalebird 0.3.1(deb)"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/0.3.1/Whalebird-0.3.1-linux-x64.deb"
+          rpm:
+            title: "Whalebird 0.3.1(rpm)"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/0.3.1/Whalebird-0.3.1-linux-x64.rpm"
+          file:
+            title: "Whalebird 0.3.1(ファイル)"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/0.3.1/Whalebird-0.3.1-linux-x64.tar.bz2"
+          old: "以前のバージョン"
         description:
           desktop_notification: "デスクトップ通知"
           streaming: "ストリーミング更新"
