@@ -4,33 +4,33 @@
     <h5 class="short-description"><%= t(".short_description") %></h5>
     <div class="downloads">
       <% if browser.platform.windows? %>
-        <a href="https://github.com/h3poteto/whalebird-desktop/releases/download/0.2.2/Whalebird-0.2.2-windows-x64.msi">
+        <%= link_to t(".download.win.link") do %>
           <button type="button" class="btn btn-info btn-lg">
-            <i class="fas fa-download"></i> <%= t(".download.msi") %>
+            <i class="fas fa-download"></i> <%= t(".download.win.title") %>
           </button>
-        </a>
+        <% end %>
       <% elsif browser.platform.mac? %>
-        <a href="https://github.com/h3poteto/whalebird-desktop/releases/download/0.2.2/Whalebird-0.2.2-darwin-x64.dmg">
+        <%= link_to t(".download.dmg.link") do %>
           <button type="button" class="btn btn-info btn-lg">
-            <i class="fas fa-download"></i> <%= t(".download.dmg") %>
+            <i class="fas fa-download"></i> <%= t(".download.dmg.title") %>
           </button>
-        </a>
+        <% end %>
       <% elsif browser.platform.linux? %>
-        <a href="https://github.com/h3poteto/whalebird-desktop/releases/download/0.2.2/Whalebird-0.2.2-linux-x64.deb">
+        <%= link_to t(".download.deb.link") do %>
           <button type="button" class="btn btn-info btn-lg">
-            <i class="fas fa-download"></i> <%= t(".download.deb") %>
+            <i class="fas fa-download"></i> <%= t(".download.deb.title") %>
           </button>
-        </a>
-        <a href="https://github.com/h3poteto/whalebird-desktop/releases/download/0.2.2/Whalebird-0.2.2-linux-x64.rpm">
+        <% end %>
+        <%= link_to t(".download.rpm.link") do %>
           <button type="button" class="btn btn-info btn-lg">
-            <i class="fas fa-download"></i> <%= t(".download.rpm") %>
+            <i class="fas fa-download"></i> <%= t(".download.rpm.title") %>
           </button>
-        </a>
-        <a href="https://github.com/h3poteto/whalebird-desktop/releases/download/0.2.2/Whalebird-0.2.2-linux-x64.tar.bz2">
+        <% end %>
+        <%= link_to t(".download.file.link") do %>
           <button type="button" class="btn btn-info btn-lg">
-            <i class="fas fa-download"></i> <%= t(".download.file") %>
+            <i class="fas fa-download"></i> <%= t(".download.file.title") %>
           </button>
-        </a>
+        <% end %>
       <% end %>
     </div>
   </div>
