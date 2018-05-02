@@ -25,6 +25,7 @@ class ApplicationController < ActionController::Base
 
   # パラメータでlocaleの指定がない場合はaccept_languageに従う
   def redirect_locale
+    return unless request.get?
     return unless params[:locale].nil?
     locale = locale_in_accept_language
     redirect_to i18n_url_for(params.merge(locale: locale.to_s)) if locale.present?

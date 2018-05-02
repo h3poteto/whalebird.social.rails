@@ -1,0 +1,29 @@
+body[data-controller="desktop/contacts"] {
+  .header {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    width: 100%;
+    background: image-url("ios/main_background.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    border-bottom: solid 1px #dcdcdc;
+  }
+
+  .contact-form {
+    max-width: 980px;
+    margin: 100px auto;
+
+    textarea {
+      height: 150px;
+    }
+
+    .invalid-feedback {
+      display: inline;
+    }
+
+    .form-actions {
+      text-align: center;
+    }
+  }
+}

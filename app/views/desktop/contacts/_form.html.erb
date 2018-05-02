@@ -1,0 +1,10 @@
+<%= simple_form_for(@inquiry, url: desktop_contacts_path(@inquiry, locale: params[:locale])) do |f| %>
+  <%= f.error_notification %>
+
+  <%= f.input :email, placeholder: 'contact@example.com' %>
+  <%= f.input :body %>
+
+  <div class="form-actions">
+    <%= f.submit t('desktop.contacts.new.submit'), class: 'btn btn-primary' %>
+  </div>
+<% end %>

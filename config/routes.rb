@@ -10,6 +10,7 @@ Rails.application.routes.draw do
 
     namespace :desktop do
       resources :contents, only: :index
+      resources :contacts, only: %i[show new create]
     end
     get "/ios" => "ios/contents#index"
     get "/desktop" => "desktop/contents#index"
