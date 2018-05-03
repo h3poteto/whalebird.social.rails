@@ -1,0 +1,11 @@
+en:
+  desktop:
+    contacts:
+      new:
+        title: "Contact"
+        submit: "Submit"
+      create:
+        success: "Thank you for your inquiry."
+      show:
+        title: "Contact"
+        success: "The inquiry accepted with the following contents"

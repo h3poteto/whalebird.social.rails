@@ -23,3 +23,11 @@ footer {
   padding-top: 100px;
   text-align: center;
 }
+
+.alert {
+  margin-bottom: 0;
+
+  &:empty {
+    display: none;
+  }
+}

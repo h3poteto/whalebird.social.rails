@@ -1,0 +1,11 @@
+ja:
+  desktop:
+    contacts:
+      new:
+        title: "お問い合わせ"
+        submit: "送信"
+      create:
+        success: "お問い合わせを受け付けました"
+      show:
+        title: "お問い合わせ"
+        success: "以下の内容でお問い合わせを受け付けました"
