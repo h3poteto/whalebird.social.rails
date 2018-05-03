@@ -1,18 +1,18 @@
 body[data-controller="desktop/contacts"] {
   .header {
-    padding-top: 100px;
-    padding-bottom: 50px;
-    width: 100%;
     background: image-url("ios/main_background.jpg") no-repeat;
-    background-size: cover;
     background-position: center;
-    text-align: center;
+    background-size: cover;
     border-bottom: solid 1px #dcdcdc;
+    padding-bottom: 50px;
+    padding-top: 100px;
+    text-align: center;
+    width: 100%;
   }
 
   .contact-form {
-    max-width: 980px;
     margin: 100px auto;
+    max-width: 980px;
 
     textarea {
       height: 150px;
