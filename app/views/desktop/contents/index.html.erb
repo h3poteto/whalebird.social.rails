@@ -18,6 +18,11 @@
           </div>
         </div>
       <% elsif browser.platform.mac? %>
+        <div class="store-link">
+          <%= link_to 'https://itunes.apple.com/us/app/whalebird/id1378283354' do %>
+            <%= image_tag "desktop/app_store_link.svg" %>
+          <% end %>
+        </div>
         <div class="btn-group download-group" role="group">
           <%= link_to t(".download.dmg.link") do %>
             <button type="button" class="btn btn-info btn-lg download-button">
