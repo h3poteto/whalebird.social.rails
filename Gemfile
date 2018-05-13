@@ -44,6 +44,7 @@ gem "browser"
 gem "config"
 gem "i18n_generators"
 gem "simple_form"
+gem "exception_notification"
 gem "slack-notifier"
 gem "underscore-string-rails"
 
