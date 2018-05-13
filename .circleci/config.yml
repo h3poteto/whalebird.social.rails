@@ -50,6 +50,7 @@ jobs:
         user: root
         environment:
           AWS_ECR_REPOSITORY: 564677439943.dkr.ecr.ap-northeast-1.amazonaws.com/h3poteto/whalebirdorg
+          SECRET_KEY_BASE: e9dccccbf54fd8982d4c01c398a99ba230e619b69341339b3d19dace2e1a19eb72bb70815b19e7c9b834a8653c22136cb8b15d9fd765a713b0e23e2a8d253adb
     working_directory: /usr/src/app
     steps:
       - checkout
