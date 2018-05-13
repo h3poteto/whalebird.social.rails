@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem "rails", "4.2.10"
+gem "rails", "5.2.0"
 # Use mysql as the database for Active Record
 gem "mysql2"
 # Use SCSS for stylesheets
@@ -12,6 +12,8 @@ gem "uglifier", ">= 1.3.0"
 gem "coffee-rails", "~> 4.2.1"
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 gem "therubyracer", platforms: :ruby
+
+gem "bootsnap"
 
 gem "bootstrap", "~> 4.0"
 gem "bootswatch", "~> 4.0"
@@ -58,4 +60,5 @@ end
 
 group :development do
   gem "rubocop"
+  gem "listen"
 end

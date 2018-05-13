@@ -16,7 +16,7 @@ class ApplicationController < ActionController::Base
   end
 
   def locale
-    @locale ||= params[:locale] || I18n.default_locale
+    @locale ||= all_permit_params[:locale] || I18n.default_locale
   end
 
   def default_url_options(options = {})
@@ -26,9 +26,9 @@ class ApplicationController < ActionController::Base
   # パラメータでlocaleの指定がない場合はaccept_languageに従う
   def redirect_locale
     return unless request.get?
-    return unless params[:locale].nil?
+    return unless all_permit_params[:locale].nil?
     locale = locale_in_accept_language
-    redirect_to i18n_url_for(params.merge(locale: locale.to_s)) if locale.present?
+    redirect_to i18n_url_for(all_permit_params.merge(locale: locale.to_s)) if locale.present?
   end
 
   def locale_in_accept_language
@@ -41,5 +41,9 @@ class ApplicationController < ActionController::Base
 
   def i18n_url_for(options)
     url_for(options)
+  end
+
+  def all_permit_params
+    params.permit!.to_h.deep_symbolize_keys
   end
 end

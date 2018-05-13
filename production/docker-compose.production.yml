@@ -13,6 +13,7 @@ services:
       SLACK_WEBHOOK_URL: $SLACK_WEBHOOK_URL
       # static fileをホスティングするnginxを用意できないのでrailsにホスティングさせる
       RAILS_SERVE_STATIC_FILES: "true"
+      RAILS_LOG_TO_STDOUT: "true"
       PORT: 3000
     healthcheck:
       test: ["CMD", "curl", "-f", "http://127.0.0.1:3000"]
