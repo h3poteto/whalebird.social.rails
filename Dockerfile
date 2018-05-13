@@ -1,4 +1,4 @@
-FROM h3poteto/rails:v2.3.4
+FROM h3poteto/rails:v2.5.1
 
 USER rails
 

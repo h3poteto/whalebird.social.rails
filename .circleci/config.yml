@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: h3poteto/rails:v2.3.4
+      - image: h3poteto/rails:v2.5.1
         environment:
           BUNDLE_APP_CONFIG: /usr/src/app/.bundle
           DB_HOST: 127.0.0.1
@@ -46,7 +46,7 @@ jobs:
 
   deploy:
     docker:
-      - image: h3poteto/rails:v2.3.4
+      - image: h3poteto/rails:v2.5.1
         user: root
         environment:
           AWS_ECR_REPOSITORY: 564677439943.dkr.ecr.ap-northeast-1.amazonaws.com/h3poteto/whalebirdorg

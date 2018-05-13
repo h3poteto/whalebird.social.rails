@@ -13,7 +13,7 @@ services:
     environment:
       MYSQL_ALLOW_EMPTY_PASSWORD: "true"
   rails:
-    image: h3poteto/rails:v2.3.4
+    image: h3poteto/rails:v2.5.1
     environment:
       BUNDLE_APP_CONFIG: /usr/src/app/.bundle
       SERVER_EMAIL: $SERVER_EMAIL
