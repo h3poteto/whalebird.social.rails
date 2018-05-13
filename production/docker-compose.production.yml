@@ -10,7 +10,7 @@ services:
       SERVER_EMAIL: $SERVER_EMAIL
       SERVER_EMAIL_PASSWORD: $SERVER_EMAIL_PASSWORD
       WEB_EMAIL: $WEB_EMAIL
-      SLACK_WEBHOOK_URL: SLACK_WEBHOOK_URL
+      SLACK_WEBHOOK_URL: $SLACK_WEBHOOK_URL
       # static fileをホスティングするnginxを用意できないのでrailsにホスティングさせる
       RAILS_SERVE_STATIC_FILES: "true"
       PORT: 3000
