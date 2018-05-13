@@ -17,6 +17,7 @@ services:
     environment:
       BUNDLE_APP_CONFIG: /usr/src/app/.bundle
       SERVER_EMAIL: $SERVER_EMAIL
+      SERVER_EMAIL_PASSWORD: $SERVER_EMAIL_PASSWORD
       WEB_EMAIL: $WEB_EMAIL
       SLACK_WEBHOOK_URL: $SLACK_WEBHOOK_URL
     volumes:
