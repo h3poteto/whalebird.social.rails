@@ -1,4 +1,4 @@
-class AddColumnBodyEnToHelps < ActiveRecord::Migration
+class AddColumnBodyEnToHelps < ActiveRecord::Migration[4.2]
   def up
     remove_column :helps, :body
     remove_column :helps, :title
