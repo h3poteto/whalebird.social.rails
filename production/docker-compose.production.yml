@@ -38,7 +38,7 @@ services:
         awslogs-group: ServiceLogs/whalebirdorg
         awslogs-stream: rails
   https-portal:
-    image: steveltn/https-portal:1
+    image: steveltn/https-portal:1.2.0
     ports:
       - '80:80'
       - '443:443'
