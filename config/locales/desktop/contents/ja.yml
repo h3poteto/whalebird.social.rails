@@ -6,20 +6,20 @@ ja:
         short_description: "Whalebirdはデスクトップ向けのMastodonクライアントです"
         download:
           win:
-            title: "Whalebird 1.1.1(exe)"
-            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/1.1.1/Whalebird-1.1.1-windows-x64.exe"
+            title: "Whalebird 1.2.0(exe)"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/1.2.0/Whalebird-1.2.0-windows-x64.exe"
           dmg:
-            title: "Whalebird 1.1.1(dmg)"
-            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/1.1.1/Whalebird-1.1.1-darwin-x64.dmg"
+            title: "Whalebird 1.2.0(dmg)"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/1.2.0/Whalebird-1.2.0-darwin-x64.dmg"
           deb:
-            title: "Whalebird 1.1.1(deb)"
-            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/1.1.1/Whalebird-1.1.1-linux-x64.deb"
+            title: "Whalebird 1.2.0(deb)"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/1.2.0/Whalebird-1.2.0-linux-x64.deb"
           rpm:
-            title: "Whalebird 1.1.1(rpm)"
-            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/1.1.1/Whalebird-1.1.1-linux-x64.rpm"
+            title: "Whalebird 1.2.0(rpm)"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/1.2.0/Whalebird-1.2.0-linux-x64.rpm"
           file:
-            title: "Whalebird 1.1.1(ファイル)"
-            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/1.1.1/Whalebird-1.1.1-linux-x64.tar.bz2"
+            title: "Whalebird 1.2.0(ファイル)"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/1.2.0/Whalebird-1.2.0-linux-x64.tar.bz2"
           old: "以前のバージョン"
         description:
           desktop_notification: "デスクトップ通知"
