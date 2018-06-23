@@ -44,42 +44,53 @@ jobs:
           name: Test
           command: bundle exec rspec
 
-  deploy:
-    docker:
-      - image: h3poteto/rails:v2.5.1
-        user: root
-        environment:
-          AWS_ECR_REPOSITORY: 564677439943.dkr.ecr.ap-northeast-1.amazonaws.com/h3poteto/whalebirdorg
-    working_directory: /usr/src/app
+  image:
+    machine: true
     steps:
       - checkout
-      - setup_remote_docker:
-          reusable: true
-          exclusive: true
       - run:
-          name: Install Docker client
-          command: |
-            set -x
-            VER="17.09.0-ce"
-            curl -L -o /tmp/docker-$VER.tgz https://download.docker.com/linux/static/stable/x86_64/docker-$VER.tgz
-            tar -xz -C /tmp -f /tmp/docker-$VER.tgz
-            mv /tmp/docker/* /usr/bin
+          name: Check docker version
+          command: docker version
       - run:
-          name: Install aws command
-          command: |
-            apt-get update && apt-get install -y python2.7-dev python-pip
-            pip install awscli
+          name: Docker build
+          command: docker build -t $AWS_ECR_REPOSITORY:$CIRCLE_SHA1 .
       - run:
-          name: Build and push
+          name: Docker push
           command: |
             $(aws ecr get-login --no-include-email --region ap-northeast-1)
-            docker build -t $AWS_ECR_REPOSITORY:latest .
-            docker push $AWS_ECR_REPOSITORY:latest
+            docker push $AWS_ECR_REPOSITORY:$CIRCLE_SHA1
+
+  deploy:
+    machine: true
+    environment:
+      - CLUSTER_NAME: base-default-prd
+      - SERVICE_NAME: whalebirdorg-web-prd
+      - AWS_DEFAULT_REGION: ap-northeast-1
+    steps:
+      - checkout
+      - run: &prepare_goploy
+          name: Preparing ecs-goploy
+          command: |
+            wget https://github.com/h3poteto/ecs-goploy/releases/download/v0.3.6/ecs-goploy_v0.3.6_linux_amd64.zip
+            unzip ecs-goploy_v0.3.6_linux_amd64.zip
+            ./ecs-goploy version
+      - run: &deploy
+          name: ecs deploy
+          command: |
+            $(aws ecr get-login --no-include-email --region ap-northeast-1)
+            ./ecs-goploy service --cluster ${CLUSTER_NAME} --service-name ${SERVICE_NAME} --image $AWS_ECR_REPOSITORY:$CIRCLE_SHA1 --timeout 600 --enable-rollback --skip-check-deployments
+
+
 workflows:
   version: 2
   build_and_deploy:
     jobs:
       - build
+      - image:
+          filters:
+            branches:
+              only:
+                - master
       - deploy:
           filters:
             branches:
@@ -87,3 +98,4 @@ workflows:
                 - master
           requires:
             - build
+            - image
