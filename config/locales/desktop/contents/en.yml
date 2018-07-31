@@ -6,20 +6,20 @@ en:
         short_description: "Whalebird is a Mastodon client for desktop application"
         download:
           win:
-            title: "Whalebird 1.5.3(exe)"
-            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/1.5.3/Whalebird-1.5.3-windows-x64.exe"
+            title: "Whalebird 1.5.5(exe)"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/1.5.5/Whalebird-1.5.5-windows-x64.exe"
           dmg:
-            title: "Whalebird 1.5.3(dmg)"
-            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/1.5.3/Whalebird-1.5.3-darwin-x64.dmg"
+            title: "Whalebird 1.5.5(dmg)"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/1.5.5/Whalebird-1.5.5-darwin-x64.dmg"
           deb:
-            title: "Whalebird 1.5.3(deb)"
-            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/1.5.3/Whalebird-1.5.3-linux-x64.deb"
+            title: "Whalebird 1.5.5(deb)"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/1.5.5/Whalebird-1.5.5-linux-x64.deb"
           rpm:
-            title: "Whalebird 1.5.3(rpm)"
-            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/1.5.3/Whalebird-1.5.3-linux-x64.rpm"
+            title: "Whalebird 1.5.5(rpm)"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/1.5.5/Whalebird-1.5.5-linux-x64.rpm"
           file:
-            title: "Whalebird 1.5.3(file)"
-            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/1.5.3/Whalebird-1.5.3-linux-x64.tar.bz2"
+            title: "Whalebird 1.5.5(file)"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/1.5.5/Whalebird-1.5.5-linux-x64.tar.bz2"
           old: "Old versions"
         description:
           desktop_notification: "Desktop Notification"
