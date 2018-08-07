@@ -6,20 +6,20 @@ ja:
         short_description: "Whalebirdはデスクトップ向けのMastodonクライアントです"
         download:
           win:
-            title: "Whalebird 1.5.5(exe)"
-            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/1.5.5/Whalebird-1.5.5-windows-x64.exe"
+            title: "Whalebird 1.5.6(exe)"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/1.5.6/Whalebird-1.5.6-windows-x64.exe"
           dmg:
-            title: "Whalebird 1.5.5(dmg)"
-            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/1.5.5/Whalebird-1.5.5-darwin-x64.dmg"
+            title: "Whalebird 1.5.6(dmg)"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/1.5.6/Whalebird-1.5.6-darwin-x64.dmg"
           deb:
-            title: "Whalebird 1.5.5(deb)"
-            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/1.5.5/Whalebird-1.5.5-linux-x64.deb"
+            title: "Whalebird 1.5.6(deb)"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/1.5.6/Whalebird-1.5.6-linux-x64.deb"
           rpm:
-            title: "Whalebird 1.5.5(rpm)"
-            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/1.5.5/Whalebird-1.5.5-linux-x64.rpm"
+            title: "Whalebird 1.5.6(rpm)"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/1.5.6/Whalebird-1.5.6-linux-x64.rpm"
           file:
-            title: "Whalebird 1.5.5(ファイル)"
-            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/1.5.5/Whalebird-1.5.5-linux-x64.tar.bz2"
+            title: "Whalebird 1.5.6(ファイル)"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/1.5.6/Whalebird-1.5.6-linux-x64.tar.bz2"
           old: "以前のバージョン"
         description:
           desktop_notification: "デスクトップ通知"
