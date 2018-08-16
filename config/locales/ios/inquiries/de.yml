@@ -1,0 +1,11 @@
+de:
+  ios:
+    inquiries:
+      new:
+        title: "Kontakt"
+        submit: "Absenden"
+
+      show:
+        title: "Kontakt"
+        success: "Die Anfrage wurde mit folgendem Inhalt entgegen genommen"
+

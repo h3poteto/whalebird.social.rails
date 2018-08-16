@@ -1,0 +1,9 @@
+de:
+  layouts:
+    header:
+      help: "Hilfe"
+      contact: "Kontakt"
+      repository: "Repository"
+      notice:
+        title: "Hinweis"
+        body_html: "<strong>Whalebird, ein Twitter-Client für iOS, wird am 20. Juni 2018 geschlossen.</strong> Vielleicht kann ich diese Anwendung aufgrund des Updates der Twitter-API, das am 20. Juni erscheinen wird, nicht weiter entwickeln. Es besteht die Möglichkeit, den Zeitplan entsprechend der Antwort von Twitter zu ändern, aber jetzt werde ich schließen. Von nun an entwickle ich <a href='/desktop'>einen Mastodon-Client</a>. Danke für die Nutzung."
