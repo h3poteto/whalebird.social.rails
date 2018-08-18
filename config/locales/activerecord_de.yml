@@ -1,0 +1,9 @@
+de:
+  activerecord:
+    models:
+      inquiry: Anfrage
+
+    attributes:
+      inquiry:
+        body: Nachricht
+        email: Email

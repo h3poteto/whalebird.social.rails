@@ -1,0 +1,33 @@
+de:
+  desktop:
+    contents:
+      index:
+        title: "Whalebird für Mastodon"
+        short_description: "Whalebird ist ein Mastodon-Client für Desktops"
+        download:
+          win:
+            title: "Whalebird 2.0.0(exe)"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/2.0.0/Whalebird-2.0.0-windows-x64.exe"
+          dmg:
+            title: "Whalebird 2.0.0(dmg)"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/2.0.0/Whalebird-2.0.0-darwin-x64.dmg"
+          deb:
+            title: "Whalebird 2.0.0(deb)"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/2.0.0/Whalebird-2.0.0-linux-x64.deb"
+          rpm:
+            title: "Whalebird 2.0.0(rpm)"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/2.0.0/Whalebird-2.0.0-linux-x64.rpm"
+          file:
+            title: "Whalebird 2.0.0(file)"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/2.0.0/Whalebird-2.0.0-linux-x64.tar.bz2"
+          old: "Alte Versionen"
+        description:
+          desktop_notification: "Desktop-Benachrichtigung"
+          streaming: "Streaming"
+          shortcut: "Viele Tastenkürzel"
+          home:
+            title: "UI wie Slack"
+            body: "Dieser Client kann Konten ändern. Und die Timelines werden per Streaming aktualisiert. Wenn du eine Benachrichtigung erhältst, wird dein Desktop benachrichtigt."
+          jump:
+            title: "Viele Tastenkürzel"
+            body: "Dieser Client hat viele Verknüpfungen, so dass du die Anwendung damit steuern kannst. Und du kannst mit Strg + K zu einer anderen Timeline springen."
