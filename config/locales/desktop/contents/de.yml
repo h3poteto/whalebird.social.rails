@@ -31,3 +31,12 @@ de:
           jump:
             title: "Viele Tastenkürzel"
             body: "Dieser Client hat viele Verknüpfungen, so dass du die Anwendung damit steuern kannst. Und du kannst mit Strg + K zu einer anderen Timeline springen."
+          theme:
+            title: "Dunkles Thema"
+            body: "Sie können das dunkle Thema wie Mastodon Web wählen. Und wenn Ihr Bildschirm schmal ist, können Sie das Seitenmenü ausblenden."
+          tag:
+            title: "Hashtag und Listen"
+            body: "Whalebird kann den Hashtag durchsuchen und die Zeitleisten des Hashtags anzeigen.Und Sie können eine Liste erstellen und die Zeitleisten der Liste anzeigen."
+          filter:
+            title: "Filter"
+            body: "Sie können Ihre Zeitleiste filtern. Bitte schreibe einen regulären Ausdruck, um die Zeitleiste zu filtern."

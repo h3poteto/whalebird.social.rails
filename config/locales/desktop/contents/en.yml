@@ -31,3 +31,13 @@ en:
           jump:
             title: "Many shortcuts"
             body: "This client has many shortcuts, so you can control this application with these shortcuts. And you can jump another timeline to type Ctrl + k which is jump function."
+          theme:
+            title: "Dark Theme"
+            body: "You can choose the dark theme like Mastodon web. And if your screen is narrow, you can collapse the side menu."
+          tag:
+            title: "Hashtag and Lists"
+            body: "Whalebird can search hastag, and show hashtag's timelines. And you can create a list, and show list's timelines."
+          filter:
+            title: "Filter"
+            body: "You can filter your timeline. Please write some regular expression to filter the timeline."
+
