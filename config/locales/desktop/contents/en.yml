@@ -6,20 +6,20 @@ en:
         short_description: "Whalebird is a Mastodon client for desktop application"
         download:
           win:
-            title: "Whalebird 2.1.2(exe)"
-            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/2.1.2/Whalebird-2.1.2-windows-x64.exe"
+            title: "Whalebird 2.2.0(exe)"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/2.2.0/Whalebird-2.2.0-windows-x64.exe"
           dmg:
-            title: "Whalebird 2.1.2(dmg)"
-            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/2.1.2/Whalebird-2.1.2-darwin-x64.dmg"
+            title: "Whalebird 2.2.0(dmg)"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/2.2.0/Whalebird-2.2.0-darwin-x64.dmg"
           deb:
-            title: "Whalebird 2.1.2(deb)"
-            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/2.1.2/Whalebird-2.1.2-linux-x64.deb"
+            title: "Whalebird 2.2.0(deb)"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/2.2.0/Whalebird-2.2.0-linux-x64.deb"
           rpm:
-            title: "Whalebird 2.1.2(rpm)"
-            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/2.1.2/Whalebird-2.1.2-linux-x64.rpm"
+            title: "Whalebird 2.2.0(rpm)"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/2.2.0/Whalebird-2.2.0-linux-x64.rpm"
           file:
-            title: "Whalebird 2.1.2(file)"
-            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/2.1.2/Whalebird-2.1.2-linux-x64.tar.bz2"
+            title: "Whalebird 2.2.0(file)"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/2.2.0/Whalebird-2.2.0-linux-x64.tar.bz2"
           old: "Old versions"
         description:
           desktop_notification: "Desktop Notification"
