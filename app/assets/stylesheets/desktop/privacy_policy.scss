@@ -1,0 +1,46 @@
+body[data-controller="desktop/privacy_policy"] {
+  .header {
+    background: image-url("desktop/main_background.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-bottom: solid 1px #dcdcdc;
+    padding-bottom: 50px;
+    padding-top: 100px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .privacy-policy {
+    margin-top: 120px;
+
+    h1 {
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    h2 {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    h3 {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    h4 {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .fill-line {
+      height: 1px;
+      background-color: #ebeef5;
+      margin: 20px 0 24px;
+    }
+
+    .important {
+      font-size: 20px;
+    }
+  }
+}
