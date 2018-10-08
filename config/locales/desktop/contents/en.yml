@@ -3,7 +3,7 @@ en:
     contents:
       index:
         title: "Whalebird"
-        short_description: "Whalebird is a Mastodon client for desktop application"
+        short_description: "Whalebird is a Mastodon and Pleroma client for desktop application"
         download:
           win:
             title: "Whalebird 2.3.1(exe)"

@@ -3,6 +3,7 @@ de:
     header:
       help: "Hilfe"
       contact: "Kontakt"
+      privacy_policy: "Datenschutz-Richtlinie"
       repository: "Repository"
       notice:
         title: "Hinweis"
