@@ -6,6 +6,7 @@ Rails.application.routes.draw do
       resources :contents, only: :index
       resources :contacts, only: %i[show new create]
     end
+    get "/desktop/privacy_policy" => "desktop/privacy_policy#index"
     get "/desktop" => "desktop/contents#index"
     root to: "desktop/contents#index"
   end

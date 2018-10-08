@@ -2,7 +2,7 @@ ja:
   desktop:
     contents:
       index:
-        title: "Whalebird for Mastodon"
+        title: "Whalebird"
         short_description: "Whalebirdはデスクトップ向けのMastodonクライアントです"
         download:
           win:
