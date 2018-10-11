@@ -3,6 +3,7 @@ ja:
     header:
       help: "ヘルプ"
       contact: "お問い合わせ"
+      privacy_policy: "プライバシーポリシー"
       repository: "リポジトリ"
       notice:
         title: "お知らせ"

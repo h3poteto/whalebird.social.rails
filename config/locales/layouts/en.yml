@@ -3,6 +3,7 @@ en:
     header:
       help: "Help"
       contact: "Contact"
+      privacy_policy: "Privacy Policy"
       repository: "Repository"
       notice:
         title: "Notice"
