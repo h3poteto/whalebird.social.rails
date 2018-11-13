@@ -6,20 +6,20 @@ en:
         short_description: "Whalebird is a Mastodon and Pleroma client for desktop application"
         download:
           win:
-            title: "Whalebird 2.4.4(exe)"
-            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/2.4.4/Whalebird-2.4.4-windows-x64.exe"
+            title: "Whalebird 2.5.0(exe)"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/2.5.0/Whalebird-2.5.0-windows-x64.exe"
           dmg:
-            title: "Whalebird 2.4.4(dmg)"
-            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/2.4.4/Whalebird-2.4.4-darwin-x64.dmg"
+            title: "Whalebird 2.5.0(dmg)"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/2.5.0/Whalebird-2.5.0-darwin-x64.dmg"
           deb:
-            title: "Whalebird 2.4.4(deb)"
-            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/2.4.4/Whalebird-2.4.4-linux-x64.deb"
+            title: "Whalebird 2.5.0(deb)"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/2.5.0/Whalebird-2.5.0-linux-x64.deb"
           rpm:
-            title: "Whalebird 2.4.4(rpm)"
-            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/2.4.4/Whalebird-2.4.4-linux-x64.rpm"
+            title: "Whalebird 2.5.0(rpm)"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/2.5.0/Whalebird-2.5.0-linux-x64.rpm"
           file:
-            title: "Whalebird 2.4.4(file)"
-            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/2.4.4/Whalebird-2.4.4-linux-x64.tar.bz2"
+            title: "Whalebird 2.5.0(file)"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/2.5.0/Whalebird-2.5.0-linux-x64.tar.bz2"
           old: "Old versions"
         description:
           desktop_notification: "Desktop Notification"
