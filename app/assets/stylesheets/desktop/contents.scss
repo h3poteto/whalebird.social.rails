@@ -34,9 +34,15 @@ body[data-controller="desktop/contents"] {
     }
   }
 
-  .description {
+  .contents {
     padding: 48px 0;
 
+    .body {
+      margin: 24px 0;
+    }
+  }
+
+  .description {
     .icon {
       font-size: 64px;
       text-align: center;
@@ -45,10 +51,6 @@ body[data-controller="desktop/contents"] {
     img {
       max-width: 90%;
       width: 640px;
-    }
-
-    .body {
-      margin: 24px 0;
     }
   }
 
