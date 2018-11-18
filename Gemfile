@@ -11,11 +11,11 @@ gem "uglifier", ">= 1.3.0"
 # Use CoffeeScript for .js.coffee assets and views
 gem "coffee-rails", "~> 4.2.1"
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-gem "therubyracer", platforms: :ruby
+gem "mini_racer", platforms: :ruby
 
 gem "bootsnap"
 
-gem "bootstrap", "~> 4.0"
+gem "bootstrap", "~> 4.1.2"
 gem "bootswatch", "~> 4.0"
 
 # Use jquery as the JavaScript library
