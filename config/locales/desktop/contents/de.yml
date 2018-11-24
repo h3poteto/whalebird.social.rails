@@ -32,8 +32,8 @@ de:
             title: "Viele Tastenkürzel"
             body: "Dieser Client hat viele Verknüpfungen, so dass du die Anwendung damit steuern kannst. Und du kannst mit Strg + K zu einer anderen Timeline springen."
           theme:
-            title: "Dunkles Thema"
-            body: "Sie können das dunkle Thema wie Mastodon Web wählen. Und wenn Ihr Bildschirm schmal ist, können Sie das Seitenmenü ausblenden."
+            title: "Viele Farbthemen"
+            body: "Sie können das dunkle Thema wie Mastodon Web und andere Farbthemen auswählen. Sie können das Farbdesign beliebig anpassen. Und wenn Ihr Bildschirm schmal ist, können Sie das Seitenmenü ausblenden."
           tag:
             title: "Hashtag und Listen"
             body: "Whalebird kann den Hashtag durchsuchen und die Zeitleisten des Hashtags anzeigen.Und Sie können eine Liste erstellen und die Zeitleisten der Liste anzeigen."
