@@ -55,7 +55,7 @@ jobs:
           name: Docker build
           command: |
             docker build -t $AWS_ECR_REPOSITORY:$CIRCLE_SHA1 .
-            docker tag $AWS_ECR_REPOSITORY:latest
+            docker tag $AWS_ECR_REPOSITORY:$CIRCLE_SHA1 $AWS_ECR_REPOSITORY:latest
       - run:
           name: Docker push
           command: |
