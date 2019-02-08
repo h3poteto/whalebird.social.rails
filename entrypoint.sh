@@ -1,6 +1,13 @@
 #!/bin/bash
 
 export AWS_DEFAULT_REGION=ap-northeast-1
+
+myaws ssm parameter get whalebirdorg.$SERVICE_ENV.db_host --region $AWS_DEFAULT_REGION
+ret=$?
+if [[ $ret -ne 0 ]]; then
+    exit
+fi
+
 export DB_HOST=`myaws ssm parameter get whalebirdorg.$SERVICE_ENV.db_host --region $AWS_DEFAULT_REGION`
 export DB_USERNAME=`myaws ssm parameter get whalebirdorg.$SERVICE_ENV.db_username --region $AWS_DEFAULT_REGION`
 export DB_PASSWORD=`myaws ssm parameter get whalebirdorg.$SERVICE_ENV.db_password --region $AWS_DEFAULT_REGION`
