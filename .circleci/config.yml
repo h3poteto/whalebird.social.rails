@@ -67,13 +67,19 @@ jobs:
     docker:
       - image: h3poteto/kubectl:latest
         environment:
-          CLUSTER_NAME: base-prd
+          CLUSTER_NAME: external-prd.cluster.k8s.local
     working_directory: /var/opt/kube
     steps:
       - run:
           name: entrypoint
           command: |
             /var/opt/kube/entrypoint.sh
+      - run:
+          name: install kube-job
+          command: |
+            wget https://github.com/h3poteto/kube-job/releases/download/v0.1.1/kube-job_0.1.1_linux_amd64.zip
+            unzip kube-job_0.1.1_linux_amd64.zip
+            ./kube-job version
       - run:
           name: Clone k8s services
           command: |
@@ -83,9 +89,13 @@ jobs:
           command: |
             kubectl version
       - run:
+          name: migration
+          command: |
+            ./kube-job run --config=$HOME/.kube/config --template-file=k8s-services/external-prd/whalebirdorg/job.yml --args="bundle exec rake db:migrate" --container="rails"
+      - run:
           name: deploy
           command: |
-            kubectl patch -f k8s-services/whalebirdorg/deployment.yml -p "{\"spec\":{\"template\":{\"spec\":{\"containers\":[{\"name\":\"rails\",\"image\":\"${AWS_ECR_REPOSITORY}:${CIRCLE_SHA1}\"}]}}}}"
+            kubectl patch -f k8s-services/external-prd/whalebirdorg/deployment.yml -p "{\"spec\":{\"template\":{\"spec\":{\"containers\":[{\"name\":\"rails\",\"image\":\"${AWS_ECR_REPOSITORY}:${CIRCLE_SHA1}\"}]}}}}"
 
 
 
