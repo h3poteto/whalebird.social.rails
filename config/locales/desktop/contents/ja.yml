@@ -6,20 +6,20 @@ ja:
         short_description: "Whalebirdはデスクトップ向けのMastodon・Pleromaクライアントです"
         download:
           win:
-            title: "Whalebird 2.6.2(exe)"
-            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/2.6.2/Whalebird-2.6.2-windows-x64.exe"
+            title: "Whalebird 2.6.3(exe)"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/2.6.3/Whalebird-2.6.3-windows-x64.exe"
           dmg:
-            title: "Whalebird 2.6.2(dmg)"
-            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/2.6.2/Whalebird-2.6.2-darwin-x64.dmg"
+            title: "Whalebird 2.6.3(dmg)"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/2.6.3/Whalebird-2.6.3-darwin-x64.dmg"
           deb:
-            title: "Whalebird 2.6.2(deb)"
-            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/2.6.2/Whalebird-2.6.2-linux-x64.deb"
+            title: "Whalebird 2.6.3(deb)"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/2.6.3/Whalebird-2.6.3-linux-x64.deb"
           rpm:
-            title: "Whalebird 2.6.2(rpm)"
-            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/2.6.2/Whalebird-2.6.2-linux-x64.rpm"
+            title: "Whalebird 2.6.3(rpm)"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/2.6.3/Whalebird-2.6.3-linux-x64.rpm"
           file:
-            title: "Whalebird 2.6.2(ファイル)"
-            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/2.6.2/Whalebird-2.6.2-linux-x64.tar.bz2"
+            title: "Whalebird 2.6.3(ファイル)"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/2.6.3/Whalebird-2.6.3-linux-x64.tar.bz2"
           old: "以前のバージョン"
         description:
           desktop_notification: "デスクトップ通知"
