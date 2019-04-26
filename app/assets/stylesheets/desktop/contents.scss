@@ -17,20 +17,38 @@ body[data-controller="desktop/contents"] {
     }
 
     .downloads {
-      padding: 80px 0 32px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 0 32px;
 
       .store-link {
-        margin: 0 0 32px;
-      }
-
-      .download-group {
         margin: 8px 12px;
 
-        .download-button {
-          border-top-right-radius: 0;
-          border-bottom-right-radius: 0;
+        img {
+          height: 48px;
         }
       }
+
+      .download-button {
+        display: flex;
+        justify-content: center;
+        padding: 12px 24px;
+        margin: 8px 12px;
+
+        .download-name {
+          line-height: 36px;
+          margin-right: 8px;
+        }
+
+        .os {
+          font-size: 32px;
+        }
+      }
+    }
+
+    .other {
+      width: auto;
     }
   }
 
