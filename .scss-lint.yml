@@ -7,8 +7,7 @@ linters:
     enabled: false
 
   SelectorDepth:
-    enabled: true
-    max_depth: 5
+    enabled: false
 
   SelectorFormat:
     enabled: true
