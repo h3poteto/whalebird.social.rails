@@ -6,23 +6,23 @@ de:
         short_description: "Whalebird ist ein Mastodon und Pleroma Client für Desktops"
         download:
           win64:
-            title: "Whalebird 2.7.2 (64bit)"
-            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/2.7.2/Whalebird-2.7.2-windows-x64.exe"
+            title: "Whalebird 2.7.3 (64bit)"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/2.7.3/Whalebird-2.7.3-windows-x64.exe"
           win32:
-            title: "Whalebird 2.7.2 (32bit)"
-            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/2.7.2/Whalebird-2.7.2-windows-ia32.exe"
+            title: "Whalebird 2.7.3 (32bit)"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/2.7.3/Whalebird-2.7.3-windows-ia32.exe"
           dmg:
-            title: "Whalebird 2.7.2"
-            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/2.7.2/Whalebird-2.7.2-darwin-x64.dmg"
+            title: "Whalebird 2.7.3"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/2.7.3/Whalebird-2.7.3-darwin-x64.dmg"
           deb:
-            title: "Whalebird 2.7.2.deb (64bit)"
-            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/2.7.2/Whalebird-2.7.2-linux-x64.deb"
+            title: "Whalebird 2.7.3.deb (64bit)"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/2.7.3/Whalebird-2.7.3-linux-x64.deb"
           rpm:
-            title: "Whalebird 2.7.2.rpm (64bit)"
-            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/2.7.2/Whalebird-2.7.2-linux-x64.rpm"
+            title: "Whalebird 2.7.3.rpm (64bit)"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/2.7.3/Whalebird-2.7.3-linux-x64.rpm"
           other:
             title: "Andere Plattformen"
-            link: "https://github.com/h3poteto/whalebird-desktop/releases/tag/2.7.2"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/tag/2.7.3"
         description:
           desktop_notification: "Desktop-Benachrichtigung"
           streaming: "Streaming"
