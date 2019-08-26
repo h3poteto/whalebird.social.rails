@@ -77,8 +77,8 @@ jobs:
       - run:
           name: install kube-job
           command: |
-            wget https://github.com/h3poteto/kube-job/releases/download/v0.1.1/kube-job_0.1.1_linux_amd64.zip
-            unzip kube-job_0.1.1_linux_amd64.zip
+            wget https://github.com/h3poteto/kube-job/releases/download/v0.2.2/kube-job_0.2.2_linux_amd64.zip
+            unzip kube-job_0.2.2_linux_amd64.zip
             ./kube-job version
       - run:
           name: Clone k8s services
@@ -91,7 +91,7 @@ jobs:
       - run:
           name: migration
           command: |
-            ./kube-job run --config=$HOME/.kube/config --template-file=k8s-services/base-prd/whalebirdorg/job.yml --args="bundle exec rake db:migrate" --container="rails"
+            ./kube-job run --config=$HOME/.kube/config --template-file=k8s-services/base-prd/whalebirdorg/job.yml --args="bundle exec rake db:migrate" --container="rails" --cleanup="all"
       - run:
           name: deploy
           command: |
