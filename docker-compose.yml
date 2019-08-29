@@ -44,5 +44,13 @@ services:
       - postgres:postgres
     command: /bin/bash
 
+  pgloader:
+    image: dimitri/pgloader
+    links:
+      - mysql:mysql
+      - postgres:postgres
+    command: /bin/bash
+
 volumes:
   storage:
+

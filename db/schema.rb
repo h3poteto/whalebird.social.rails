@@ -15,8 +15,8 @@ ActiveRecord::Schema.define(version: 2019_08_28_161840) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "inquiries", id: :serial, force: :cascade do |t|
-    t.string "email"
+  create_table "inquiries", force: :cascade do |t|
+    t.string "email", limit: 255
     t.text "body"
     t.datetime "created_at"
     t.datetime "updated_at"
