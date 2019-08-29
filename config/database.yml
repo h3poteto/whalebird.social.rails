@@ -10,17 +10,17 @@
 #   http://dev.mysql.com/doc/refman/5.0/en/old-client.html
 #
 default: &default
-  adapter: mysql2
-  encoding: utf8mb4
+  adapter: postgresql
+  encoding: utf8
   pool: 5
-  host: <%= ENV["DB_HOST"] || "mysql" %>
+  host: <%= ENV["DB_HOST"] || "postgres" %>
   username: <%= ENV["DB_USERNAME"] || "root" %>
   password: <%= ENV["DB_PASSWORD"] %>
   socket: <%= ENV["DB_SOCKET"] %>
 
 development:
   <<: *default
-  database: <%= ENV["DB_WHALEBIRD_DEVELOPMENT"] || "whalebirdorg_development" %>
+  database: <%= ENV["DB_WHALEBIRD_DEVELOPMENT"] || "whalebirdorg_dev" %>
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
