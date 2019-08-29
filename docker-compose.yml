@@ -19,7 +19,6 @@ services:
     image: postgres:11.2-alpine
     environment:
       POSTGRES_USER: root
-      POSTGRES_PASSWORD: hoge
       POSTGRES_DB: whalebirdorg
     volumes:
       - storage:/var/lib/postgres/data
@@ -32,8 +31,6 @@ services:
       SERVER_EMAIL_PASSWORD: $SERVER_EMAIL_PASSWORD
       WEB_EMAIL: $WEB_EMAIL
       SLACK_WEBHOOK_URL: $SLACK_WEBHOOK_URL
-      DB_USERNAME: root
-      DB_PASSWORD: hoge
     volumes:
       - ~/.ssh:/home/rails/.ssh
       - .:/usr/src/app
