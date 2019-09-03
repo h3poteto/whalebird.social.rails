@@ -163,7 +163,6 @@ GEM
     minitest (5.11.3)
     msgpack (1.2.4)
     multi_json (1.13.1)
-    mysql2 (0.5.2)
     nio4r (2.3.1)
     nokogiri (1.10.4)
       mini_portile2 (~> 2.4.0)
@@ -313,7 +312,6 @@ DEPENDENCIES
   jquery-rails (~> 4.3)
   listen
   mini_racer
-  mysql2
   pg
   popper_js
   pry-byebug
