@@ -50,6 +50,6 @@ test:
 #
 production:
   <<: *default
-  database: <%= ENV["DB_WHALEBIRD_PORDUCTION"] || "whalebirdorg_production" %>
+  database: <%= ENV["DB_WHALEBIRD_PORDUCTION"] || "whalebirdorg" %>
   username: <%= ENV["DB_USERNAME"] %>
   password: <%= ENV['DB_PASSWORD'] %>
