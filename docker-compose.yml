@@ -5,16 +5,6 @@ services:
    volumes:
      - /var/lib/mysql
 
-
-  mysql:
-    image: mysql:5.7
-    ports:
-      - "3309:3306"
-    volumes_from:
-      - storage
-    environment:
-      MYSQL_ALLOW_EMPTY_PASSWORD: "true"
-
   postgres:
     image: postgres:11.2-alpine
     environment:
@@ -37,14 +27,6 @@ services:
     ports:
       - "3000:3000"
     links:
-      - mysql:mysql
-      - postgres:postgres
-    command: /bin/bash
-
-  pgloader:
-    image: dimitri/pgloader
-    links:
-      - mysql:mysql
       - postgres:postgres
     command: /bin/bash
 
