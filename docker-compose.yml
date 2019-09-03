@@ -4,6 +4,8 @@ services:
    image: busybox
    volumes:
      - /var/lib/mysql
+
+
   mysql:
     image: mysql:5.7
     ports:
@@ -12,8 +14,17 @@ services:
       - storage
     environment:
       MYSQL_ALLOW_EMPTY_PASSWORD: "true"
+
+  postgres:
+    image: postgres:11.2-alpine
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_DB: whalebirdorg
+    volumes:
+      - storage:/var/lib/postgres/data
+
   rails:
-    image: h3poteto/rails:v2.5.1
+    image: h3poteto/rails:v2.6.3-slim-buster
     environment:
       BUNDLE_APP_CONFIG: /usr/src/app/.bundle
       SERVER_EMAIL: $SERVER_EMAIL
@@ -27,4 +38,16 @@ services:
       - "3000:3000"
     links:
       - mysql:mysql
+      - postgres:postgres
     command: /bin/bash
+
+  pgloader:
+    image: dimitri/pgloader
+    links:
+      - mysql:mysql
+      - postgres:postgres
+    command: /bin/bash
+
+volumes:
+  storage:
+
