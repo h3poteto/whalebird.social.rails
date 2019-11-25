@@ -1,8 +1,8 @@
-# whalebird.org
+# whalebird.social
 
 The official site of [Whalebird](https://github.com/h3poteto/whalebird-desktop) which is a Mastodon client for Windows, Mac and Linux.
 
-[https://whalebird.org/](https://whalebird.org/)
+[https://whalebird.social/](https://whalebird.social/)
 
 ## Development
 It is normally rails application on docker. So it is required docker and docker-compose command in your machine.
