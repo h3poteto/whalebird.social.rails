@@ -42,6 +42,9 @@ de:
           filter:
             title: "Filter"
             body: "Sie können Ihre Zeitleiste filtern. Bitte schreibe einen regulären Ausdruck, um die Zeitleiste zu filtern."
+          proxy:
+            title: "Proxy support"
+            body: "You can use proxy server like modern web browsers. Whalebird can load OS proxy configuration, or you can apply certain proxy only to Whalebird."
         donate:
           title: "Sponsor"
           description: "Whalebird ist freie Software. Wir machen nicht mit Werbung Geld. Ihre Spende unterstützt also dieses Projekt."
