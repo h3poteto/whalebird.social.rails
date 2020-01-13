@@ -42,6 +42,9 @@ en:
           filter:
             title: "Filter"
             body: "You can filter your timeline. Please write some regular expression to filter the timeline."
+          proxy:
+            title: "Proxy support"
+            body: "You can use proxy server like modern web browsers. Whalebird can load OS proxy configuration, or you can apply certain proxy only to Whalebird."
         donate:
           title: "Sponsor"
           description: "Whalebird is free software. We don't monetize with advertisement. So your donation supports this project."
