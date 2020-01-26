@@ -64,7 +64,7 @@ GEM
       sassc-rails (>= 2.0.0)
     bootswatch (4.3.1)
       autoprefixer-rails (>= 6.0.3)
-    browser (3.0.2)
+    browser (3.0.3)
     builder (3.2.4)
     byebug (11.0.1)
     capybara (3.30.0)
