@@ -3,7 +3,7 @@ ja:
     contents:
       index:
         title: "Whalebird"
-        short_description: "Whalebirdはデスクトップ向けのMastodon・Pleromaクライアントです"
+        short_description: "Whalebirdはデスクトップ向けのMastodon・Pleroma・Misskeyクライアントです"
         download:
           win64:
             title: "Whalebird 4.0.1 (64bit)"

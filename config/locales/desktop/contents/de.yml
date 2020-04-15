@@ -3,7 +3,7 @@ de:
     contents:
       index:
         title: "Whalebird"
-        short_description: "Whalebird ist ein Mastodon und Pleroma Client für Desktops"
+        short_description: "Whalebird ist ein Mastodon, Pleroma und Misskey Client für Desktops"
         download:
           win64:
             title: "Whalebird 4.0.1 (64bit)"
