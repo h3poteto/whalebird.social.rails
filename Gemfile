@@ -22,7 +22,7 @@ gem "bootswatch", "~> 4.3"
 gem "jquery-rails", "~> 4.3"
 gem "popper_js"
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem "jbuilder", "~> 2.9"
+gem "jbuilder", "~> 2.10"
 # bundle exec rake doc:rails generates the API under doc/api.
 gem "sdoc", "~> 1.0.0", group: :doc
 
