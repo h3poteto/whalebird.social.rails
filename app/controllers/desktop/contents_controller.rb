@@ -3,4 +3,7 @@
 class Desktop::ContentsController < DesktopController
   def index
   end
+
+  def downloads
+  end
 end

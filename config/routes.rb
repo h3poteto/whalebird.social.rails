@@ -3,6 +3,7 @@
 Rails.application.routes.draw do
   scope "(:locale)", locale: /#{I18n.available_locales.map(&:to_s).join('|')}/ do
     namespace :desktop do
+      get "/contents/downloads" => "contents#downloads"
       resources :contents, only: :index
       resources :contacts, only: %i[show new create]
     end

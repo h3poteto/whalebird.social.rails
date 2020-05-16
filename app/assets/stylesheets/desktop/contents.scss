@@ -1,4 +1,4 @@
-body[data-controller="desktop/contents"] {
+body[data-controller="desktop/contents"][data-action="index"] {
   .main-board {
     background: image-url("desktop/main_background.jpg") no-repeat;
     background-position: 50% 50%;
@@ -74,5 +74,69 @@ body[data-controller="desktop/contents"] {
 
   .bg-gray {
     background-color: rgb(236, 236, 236);
+  }
+}
+
+body[data-controller="desktop/contents"][data-action="downloads"] {
+  .header {
+    background: image-url("desktop/main_background.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-bottom: solid 1px #dcdcdc;
+    padding-bottom: 50px;
+    padding-top: 100px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .downloads {
+    h3 {
+      margin: 2rem 0 0 0;
+    }
+
+    .store-link {
+      margin: 8px 12px;
+
+      img {
+        height: 48px;
+      }
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    .download-button {
+      display: flex;
+      justify-content: center;
+      margin: 8px 12px;
+      padding: 8px 18px;
+
+      .download-name {
+        line-height: 36px;
+        margin-right: 8px;
+      }
+
+      .os {
+        font-size: 24px;
+      }
+    }
+
+    .command {
+      margin: 8px 12px;
+      max-width: 300px;
+
+      .input-group-text {
+        background-color: #2C3E50;
+        color: #ffffff;
+        border: none;
+      }
+
+      .code {
+      background-color: #2C3E50;
+      color: #ffffff;
+      border: none;
+      }
+    }
   }
 }
