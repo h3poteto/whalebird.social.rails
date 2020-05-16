@@ -1,6 +1,7 @@
 de:
   layouts:
     header:
+      downloads: "Downloads"
       help: "Hilfe"
       contact: "Kontakt"
       privacy_policy: "Datenschutz-Richtlinie"

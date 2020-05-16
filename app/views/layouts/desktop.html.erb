@@ -35,6 +35,7 @@
     <%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>
 
     <%= javascript_include_tag "desktop" %>
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
   </head>
   <body data-controller=<%= params[:controller] %> data-action=<%= params[:action] %>>
 
@@ -47,5 +48,8 @@
     <% if Rails.env.production? %>
       <%= render "layouts/google_analytics" %>
     <% end %>
+    <script>
+      new ClipboardJS('.btn');
+    </script>
   </body>
 </html>

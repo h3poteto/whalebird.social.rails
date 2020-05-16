@@ -1,6 +1,7 @@
 ja:
   layouts:
     header:
+      downloads: "ダウンロード"
       help: "ヘルプ"
       contact: "お問い合わせ"
       privacy_policy: "プライバシーポリシー"
