@@ -27,11 +27,11 @@
       <div class="input-group-prepend">
         <span class="input-group-text pr-1">$</span>
       </div>
-      <input type="text" class="form-control code" aria-label="Amount (to the nearest dollar)" value="brew cask install whalebird" readonly>
+      <input id="brew" type="text" class="form-control code" aria-label="Amount (to the nearest dollar)" value="brew cask install whalebird" readonly>
       <div class="input-group-append">
-        <span class="input-group-text btn btn-dark">
+        <button class="input-group-text btn btn-dark" data-clipboard-target="#brew">
           <i class="fas fa-copy"></i>
-        </span>
+        </button>
       </div>
     </div>
     <div class="store-link">
@@ -54,20 +54,20 @@
       <div class="input-group-prepend">
         <span class="input-group-text pr-1">$</span>
       </div>
-      <input type="text" class="form-control code" aria-label="Amount (to the nearest dollar)" value="yay -S whalebird-desktop" readonly>
+      <input id="yay" type="text" class="form-control code" aria-label="Amount (to the nearest dollar)" value="yay -S whalebird-desktop" readonly>
       <div class="input-group-append">
-        <span class="input-group-text btn btn-dark">
+        <button class="input-group-text btn btn-dark" data-clipboard-target="#yay">
           <i class="fas fa-copy"></i>
-        </span>
+        </button>
       </div>
     </div>
     <div class="input-group mb-3 command">
       <div class="input-group-prepend">
         <span class="input-group-text pr-1">$</span>
       </div>
-      <input type="text" class="form-control code" aria-label="Amount (to the nearest dollar)" value="sudo snap install whalebird" readonly>
+      <input id="snap" type="text" class="form-control code" aria-label="Amount (to the nearest dollar)" value="sudo snap install whalebird" readonly>
       <div class="input-group-append">
-        <button class="input-group-text btn btn-dark">
+        <button class="input-group-text btn btn-dark"  data-clipboard-target="#snap">
           <i class="fas fa-copy"></i>
         </span>
       </div>
