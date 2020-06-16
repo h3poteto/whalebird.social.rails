@@ -6,6 +6,7 @@ ja:
         submit: "送信"
       create:
         success: "お問い合わせを受け付けました"
+        recaptcha_score_error: "セッションエラー"
       show:
         title: "お問い合わせ"
         success: "以下の内容でお問い合わせを受け付けました"
