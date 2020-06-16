@@ -51,5 +51,14 @@
     <script>
       new ClipboardJS('.btn');
     </script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LevfKUZAAAAAESaJm-KBw5KFCx8nLKPTpPXjgV3"></script>
+    <script>
+      grecaptcha.ready(function () {
+        grecaptcha.execute('6LevfKUZAAAAAESaJm-KBw5KFCx8nLKPTpPXjgV3', { action: 'contact' }).then(function (token) {
+          var recaptchaResponse = document.getElementById('recaptchaResponse');
+          recaptchaResponse.value = token;
+        });
+      });
+    </script>
   </body>
 </html>

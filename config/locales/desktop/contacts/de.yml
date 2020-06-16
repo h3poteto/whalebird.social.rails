@@ -6,6 +6,7 @@ de:
         submit: "Absenden"
       create:
         success: "Danke für deine Anfrage."
+        recaptcha_score_error: "Session error"
       show:
         title: "Kontakt"
         success: "Die Anfrage wurde mit folgendem Inhalt entgegen genommen"

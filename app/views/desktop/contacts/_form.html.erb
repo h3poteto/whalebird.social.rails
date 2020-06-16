@@ -4,6 +4,8 @@
   <%= f.input :email, placeholder: 'contact@example.com' %>
   <%= f.input :body %>
 
+  <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
+
   <div class="form-actions">
     <%= f.submit t('desktop.contacts.new.submit'), class: 'btn btn-primary' %>
   </div>

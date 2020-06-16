@@ -6,6 +6,7 @@ en:
         submit: "Submit"
       create:
         success: "Thank you for your inquiry."
+        recaptcha_score_error: "Session error"
       show:
         title: "Contact"
         success: "The inquiry accepted with the following contents"
