@@ -19,7 +19,7 @@ gem "bootstrap", "~> 4.4.1"
 gem "bootswatch", "~> 4.3"
 
 # Use jquery as the JavaScript library
-gem "jquery-rails", "~> 4.3"
+gem "jquery-rails", "~> 4.4"
 gem "popper_js"
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem "jbuilder", "~> 2.10"
