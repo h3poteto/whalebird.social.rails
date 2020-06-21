@@ -31,14 +31,17 @@ class Desktop::ContactsController < DesktopController
         'secret' => ENV['RECAPTCHA_SECRET_KEY'],
         'response' => params[:recaptcha_response]
       })
+
+    @inquiry = ::Inquiry.new(inquiry_params)
     # failed: "{\n  \"success\": false,\n  \"error-codes\": [\n    \"missing-input-response\"\n  ]\n}"
     # success: "{\n  \"success\": true,\n  \"challenge_ts\": \"2020-06-16T14:17:18Z\",\n  \"hostname\": \"localhost\",\n  \"score\": 0.9,\n  \"action\": \"contact\"\n}"
     response = JSON.parse(res.body)
     unless response["success"]
-      raise RecaptchaError, response["error-codes"]
+      logger.warn(response["error-codes"])
+      flash[:notice] = t('desktop.contacts.create.recaptcha_score_error')
+      return render :new
     end
 
-    @inquiry = ::Inquiry.new(inquiry_params)
     unless response["score"] > 0.5
       flash[:notice] = t('desktop.contacts.create.recaptcha_score_error')
       return render :new
