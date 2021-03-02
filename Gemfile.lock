@@ -270,9 +270,9 @@ GEM
       tilt
     sdoc (1.1.0)
       rdoc (>= 5.0)
-    simple_form (5.0.3)
-      actionpack (>= 5.0)
-      activemodel (>= 5.0)
+    simple_form (5.1.0)
+      actionpack (>= 5.2)
+      activemodel (>= 5.2)
     slack-notifier (2.3.2)
     spring (2.1.1)
     sprockets (3.7.2)
