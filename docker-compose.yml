@@ -14,7 +14,7 @@ services:
       - storage:/var/lib/postgres/data
 
   rails:
-    image: h3poteto/rails:v2.6.3-slim-buster
+    image: ghcr.io/h3poteto/rails:3.0.0-slim-buster
     environment:
       BUNDLE_APP_CONFIG: /usr/src/app/.bundle
       SERVER_EMAIL: $SERVER_EMAIL
