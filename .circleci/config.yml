@@ -16,14 +16,14 @@ jobs:
       - restore_cache:
           name: Restoring Cache - bundle
           keys:
-            - bundle-ruby263-{{ checksum "Gemfile" }}-{{ checksum "Gemfile.lock" }}
-            - bundle-ruby263-{{ checksum "Gemfile" }}-
+            - bundle-ruby300-{{ checksum "Gemfile" }}-{{ checksum "Gemfile.lock" }}
+            - bundle-ruby300-{{ checksum "Gemfile" }}-
       - run:
           name: Bundle install
           command: bundle install --path vendor/bundle
       - save_cache:
           name: Saving Cache - bundle
-          key: bundle-ruby263-{{ checksum "Gemfile" }}-{{ checksum "Gemfile.lock" }}
+          key: bundle-ruby300-{{ checksum "Gemfile" }}-{{ checksum "Gemfile.lock" }}
           paths:
             - "vendor/bundle"
 
