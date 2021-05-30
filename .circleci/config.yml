@@ -35,6 +35,9 @@ jobs:
       - run:
           name: Test
           command: bundle exec rspec
+      - run:
+          name: Assets precompile
+          command: bundle exec rake assets:precompile
 
   image:
     machine: true
