@@ -11,9 +11,9 @@
  * file per style scope.
  *
  */
-@import "bootswatch/flatly/variables";
+@import "flatly/variables";
 @import "bootstrap";
-@import "bootswatch/flatly/bootswatch";
+@import "flatly/bootswatch";
 @import "./desktop/*";
 
 footer {
