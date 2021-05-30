@@ -5,7 +5,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarColor03">
+    <div class="collapse navbar-collapse" id="navbarColor01">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
           <%= link_to t('layouts.header.downloads'), desktop_contents_downloads_path, class: 'nav-link' %>
@@ -22,10 +22,10 @@
           <% end %>
         </li>
       </ul>
-      <div class="dropdown">
-        <button class="btn btn-outline-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <div class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
           <%= I18n.t("locale_name") %>
-        </button>
+        </a>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <% I18n.available_locales.each do |locale| %>
               <li><%= link_to I18n.t("locale_name", locale: locale), i18n_url_for(params.merge(locale: locale)), class: "dropdown-item" %></li>
