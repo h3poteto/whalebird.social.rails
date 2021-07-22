@@ -72,8 +72,8 @@ GEM
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
     ast (2.4.2)
-    autoprefixer-rails (10.2.4.0)
-      execjs
+    autoprefixer-rails (10.2.5.1)
+      execjs (> 0)
     better_errors (2.9.1)
       coderay (>= 1.0.0)
       erubi (>= 1.0.0)
@@ -82,7 +82,7 @@ GEM
       debug_inspector (>= 0.0.1)
     bootsnap (1.7.5)
       msgpack (~> 1.0)
-    bootstrap (5.0.0)
+    bootstrap (5.0.1)
       autoprefixer-rails (>= 9.1.0)
       popper_js (>= 2.9.2, < 3)
       sassc-rails (>= 2.0.0)
@@ -151,7 +151,7 @@ GEM
     exception_notification (4.4.3)
       actionmailer (>= 4.0, < 7)
       activesupport (>= 4.0, < 7)
-    execjs (2.7.0)
+    execjs (2.8.1)
     ffi (1.15.1)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
@@ -160,6 +160,7 @@ GEM
     i18n_generators (2.2.2)
       activerecord (>= 3.0.0)
       railties (>= 3.0.0)
+    io-wait (0.1.0)
     jbuilder (2.11.2)
       activesupport (>= 5.0.0)
     jquery-rails (4.4.0)
@@ -187,7 +188,9 @@ GEM
     net-ftp (0.1.2)
       net-protocol
       time
-    net-protocol (0.1.0)
+    net-protocol (0.1.1)
+      io-wait
+      timeout
     nio4r (2.5.7)
     nokogiri (1.11.6)
       mini_portile2 (~> 2.5.0)
@@ -300,6 +303,7 @@ GEM
     thor (1.1.0)
     tilt (2.0.10)
     time (0.1.0)
+    timeout (0.1.1)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
     uglifier (4.2.0)
@@ -321,7 +325,7 @@ DEPENDENCIES
   better_errors
   binding_of_caller
   bootsnap
-  bootstrap (~> 5.0.0)
+  bootstrap (~> 5.0.1)
   bootswatch!
   browser
   capybara
