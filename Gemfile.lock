@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/thomaspark/bootswatch.git
-  revision: b970b0a2bb6a0fe01359a445ecc021a9eaf98c1b
-  tag: v5.0.1
+  revision: 91763083ae259ee213dd28427c62d01520a32f12
+  tag: v5.1.0
   specs:
-    bootswatch (5.0.1)
+    bootswatch (5.1.0)
 
 GEM
   remote: https://rubygems.org/
