@@ -2,28 +2,29 @@ version: 2
 jobs:
   build:
     docker:
-      - image: ghcr.io/h3poteto/rails:3.0.0-slim-buster
+      - image: ghcr.io/h3poteto/rails:3.0.3-slim-buster
         environment:
           BUNDLE_APP_CONFIG: /usr/src/app/.bundle
           DB_HOST: 127.0.0.1
-      - image: postgres:11.2-alpine
+      - image: postgres:13.5-alpine
         environment:
           POSTGRES_USER: root
-          POSTGRES_DB: whalebirdorg
+          POSTGRES_PASSWORD: sample
+          POSTGRES_DB: whalebirdsocial
     working_directory: /usr/src/app
     steps:
       - checkout
       - restore_cache:
           name: Restoring Cache - bundle
           keys:
-            - bundle-ruby300-{{ checksum "Gemfile" }}-{{ checksum "Gemfile.lock" }}
-            - bundle-ruby300-{{ checksum "Gemfile" }}-
+            - bundle-ruby303-{{ checksum "Gemfile" }}-{{ checksum "Gemfile.lock" }}
+            - bundle-ruby303-{{ checksum "Gemfile" }}-
       - run:
           name: Bundle install
           command: bundle install --path vendor/bundle
       - save_cache:
           name: Saving Cache - bundle
-          key: bundle-ruby300-{{ checksum "Gemfile" }}-{{ checksum "Gemfile.lock" }}
+          key: bundle-ruby303-{{ checksum "Gemfile" }}-{{ checksum "Gemfile.lock" }}
           paths:
             - "vendor/bundle"
 

@@ -1,4 +1,4 @@
-FROM ghcr.io/h3poteto/rails:3.0.0-slim-buster
+FROM ghcr.io/h3poteto/rails:3.0.3-slim-buster
 
 USER rails
 
