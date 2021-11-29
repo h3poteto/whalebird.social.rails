@@ -6,15 +6,16 @@ services:
      - /var/lib/mysql
 
   postgres:
-    image: postgres:11.2-alpine
+    image: postgres:13.5-alpine
     environment:
       POSTGRES_USER: root
-      POSTGRES_DB: whalebirdorg
+      POSTGRES_PASSWORD: sample
+      POSTGRES_DB: whalebirdsocial
     volumes:
       - storage:/var/lib/postgres/data
 
   rails:
-    image: ghcr.io/h3poteto/rails:3.0.0-slim-buster
+    image: ghcr.io/h3poteto/rails:3.0.3-slim-buster
     environment:
       BUNDLE_APP_CONFIG: /usr/src/app/.bundle
       SERVER_EMAIL: $SERVER_EMAIL
