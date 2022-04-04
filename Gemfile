@@ -49,6 +49,7 @@ gem "simple_form"
 gem "exception_notification"
 gem "slack-notifier"
 gem "underscore-string-rails"
+gem "rollbar"
 
 group :development, :test do
   gem "better_errors"
