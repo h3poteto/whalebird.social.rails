@@ -1,3 +1,6 @@
+Rails:
+  Enabled: true
+
 Layout/AlignHash:
   Exclude:
     - 'config/initializers/simple_form.rb'
