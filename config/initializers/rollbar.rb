@@ -3,7 +3,8 @@ Rollbar.configure do |config|
   # To disable in specific environments, set config.enabled=false.
 
   config.access_token = ENV['ROLLBAR_ACCESS_TOKEN']
-  config.logger_level = 'error'
+  config.exception_level_filters.merge!({'ActionController::RoutingError' => 'ignore'})
+
 
   # Here we'll disable in 'test':
   if Rails.env.test?
