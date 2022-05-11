@@ -283,7 +283,7 @@ GEM
       sprockets (> 3.0)
       sprockets-rails
       tilt
-    sdoc (2.3.2)
+    sdoc (2.4.0)
       rdoc (>= 5.0)
     simple_form (5.1.0)
       actionpack (>= 5.2)
@@ -297,7 +297,7 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
-    stringio (3.0.1)
+    stringio (3.0.2)
     thor (1.2.1)
     tilt (2.0.10)
     tzinfo (2.0.4)
@@ -342,7 +342,7 @@ DEPENDENCIES
   rspec-rails
   rubocop
   sass-rails (~> 6.0)
-  sdoc (~> 2.3.2)
+  sdoc (~> 2.4.0)
   simple_form
   slack-notifier
   spring
