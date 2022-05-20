@@ -24,6 +24,10 @@ jobs:
           --health-retries 5
         ports:
           - 5432:5432
+
+    env:
+      DB_HOST: localhost
+
     steps:
       - uses: actions/checkout@v2
       - uses: ruby/setup-ruby@v1
