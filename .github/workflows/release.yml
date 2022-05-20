@@ -5,6 +5,7 @@ on:
     workflows: ["Build"]
     branches:
       - master
+      - ci/actions
     pull_request:
     types: [completed]
 
