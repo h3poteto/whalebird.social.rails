@@ -5,35 +5,32 @@ en:
         title: "Downloads"
         download:
           win64:
-            title: "Whalebird-4.6.3-x64.exe"
-            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/4.6.3/Whalebird-4.6.3-windows-x64.exe"
+            title: "Whalebird-4.6.5-x64.exe"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/4.6.5/Whalebird-4.6.5-windows-x64.exe"
           win32:
-            title: "Whalebird-4.6.3-ia32.exe"
-            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/4.6.3/Whalebird-4.6.3-windows-ia32.exe"
+            title: "Whalebird-4.6.5-ia32.exe"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/4.6.5/Whalebird-4.6.5-windows-ia32.exe"
           dmg:
-            title: "Whalebird-4.6.3.dmg"
-            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/4.6.3/Whalebird-4.6.3-darwin-universal.dmg"
+            title: "Whalebird-4.6.5.dmg"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/4.6.5/Whalebird-4.6.5-darwin-universal.dmg"
           appimage:
-            title: "Whalebird-4.6.3-x64.AppImage"
-            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/4.6.3/Whalebird-4.6.3-linux-x64.AppImage"
+            title: "Whalebird-4.6.5-x64.AppImage"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/4.6.5/Whalebird-4.6.5-linux-x64.AppImage"
           deb64:
-            title: "Whalebird-4.6.3-x64.deb"
-            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/4.6.3/Whalebird-4.6.3-linux-x64.deb"
+            title: "Whalebird-4.6.5-x64.deb"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/4.6.5/Whalebird-4.6.5-linux-x64.deb"
           rpm64:
-            title: "Whalebird-4.6.3-x64.rpm"
-            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/4.6.3/Whalebird-4.6.3-linux-x64.rpm"
+            title: "Whalebird-4.6.5-x64.rpm"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/4.6.5/Whalebird-4.6.5-linux-x64.rpm"
           tar64:
-            title: "Whalebird-4.6.3-x64.tar.bz2"
-            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/4.6.3/Whalebird-4.6.3-linux-x64.tar.bz2"
-          tar32:
-            title: "Whalebird-4.6.3-ia32.tar.bz2"
-            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/4.6.3/Whalebird-4.6.3-linux-ia32.tar.bz2"
+            title: "Whalebird-4.6.5-x64.tar.bz2"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/4.6.5/Whalebird-4.6.5-linux-x64.tar.bz2"
           arm64:
-            title: "Whalebird-4.6.3-arm64.tar.bz2"
-            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/4.6.3/Whalebird-4.6.3-linux-arm64.tar.bz2"
+            title: "Whalebird-4.6.5-arm64.tar.bz2"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/4.6.5/Whalebird-4.6.5-linux-arm64.tar.bz2"
           armv7l:
-            title: "Whalebird-4.6.3-armv7l.tar.bz2"
-            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/4.6.3/Whalebird-4.6.3-linux-armv7l.tar.bz2"
+            title: "Whalebird-4.6.5-armv7l.tar.bz2"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/4.6.5/Whalebird-4.6.5-linux-armv7l.tar.bz2"
       index:
         title: "Whalebird"
         short_description: "Whalebird is a Mastodon, Pleroma, and Misskey client for desktop application"
