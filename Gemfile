@@ -16,7 +16,7 @@ gem "mini_racer", "~> 0.6.0", platforms: :ruby
 gem "bootsnap"
 
 gem "bootstrap", "~> 5.1.3"
-gem "bootswatch", github: "thomaspark/bootswatch", tag: "v5.2.0"
+gem "bootswatch", github: "thomaspark/bootswatch", tag: "v5.2.1"
 
 # Use jquery as the JavaScript library
 gem "jquery-rails", "~> 4.5"
