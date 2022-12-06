@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem "rails", "6.1.4.6"
+gem "rails", "6.1.7"
 
 gem "pg"
 # Use SCSS for stylesheets
