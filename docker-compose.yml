@@ -6,7 +6,7 @@ services:
      - /var/lib/mysql
 
   postgres:
-    image: postgres:13.5-alpine
+    image: postgres:13.9-alpine
     environment:
       POSTGRES_USER: root
       POSTGRES_PASSWORD: sample
