@@ -6,7 +6,7 @@ jobs:
         environment:
           BUNDLE_APP_CONFIG: /usr/src/app/.bundle
           DB_HOST: 127.0.0.1
-      - image: postgres:13.5-alpine
+      - image: postgres:13.9-alpine
         environment:
           POSTGRES_USER: root
           POSTGRES_PASSWORD: sample
