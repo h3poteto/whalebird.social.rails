@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: ghcr.io/h3poteto/rails:3.1.3-slim-buster
+      - image: ghcr.io/h3poteto/rails-node:3.1.3-node16-slim-bullseye
         environment:
           BUNDLE_APP_CONFIG: /usr/src/app/.bundle
           DB_HOST: 127.0.0.1
@@ -17,14 +17,14 @@ jobs:
       - restore_cache:
           name: Restoring Cache - bundle
           keys:
-            - bundle-ruby303-{{ checksum "Gemfile" }}-{{ checksum "Gemfile.lock" }}
-            - bundle-ruby303-{{ checksum "Gemfile" }}-
+            - bundle-ruby313-{{ checksum "Gemfile" }}-{{ checksum "Gemfile.lock" }}
+            - bundle-ruby313-{{ checksum "Gemfile" }}-
       - run:
           name: Bundle install
           command: bundle install --path vendor/bundle
       - save_cache:
           name: Saving Cache - bundle
-          key: bundle-ruby303-{{ checksum "Gemfile" }}-{{ checksum "Gemfile.lock" }}
+          key: bundle-ruby313-{{ checksum "Gemfile" }}-{{ checksum "Gemfile.lock" }}
           paths:
             - "vendor/bundle"
 
