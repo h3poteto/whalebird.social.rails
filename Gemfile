@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem "rails", "6.1.7"
+gem "rails", "7.0.4"
 
 gem "pg"
 # Use SCSS for stylesheets
@@ -10,8 +10,6 @@ gem "sass-rails", "~> 6.0"
 gem "uglifier", ">= 1.3.0"
 # Use CoffeeScript for .js.coffee assets and views
 gem "coffee-rails", "~> 5.0.0"
-# See https://github.com/sstephenson/execjs#readme for more supported runtimes
-gem "mini_racer", "~> 0.6.0", platforms: :ruby
 
 gem "bootsnap"
 
@@ -25,6 +23,8 @@ gem "popper_js"
 gem "jbuilder", "~> 2.11"
 # bundle exec rake doc:rails generates the API under doc/api.
 gem "sdoc", "~> 2.4.0", group: :doc
+
+gem "sprockets-rails"
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem "spring", group: :development
