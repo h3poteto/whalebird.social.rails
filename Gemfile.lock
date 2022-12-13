@@ -171,8 +171,6 @@ GEM
       railties (>= 4.2.0)
       thor (>= 0.14, < 2.0)
     json (2.6.3)
-    libv8-node (16.10.0.0)
-    libv8-node (16.10.0.0-x86_64-linux)
     listen (3.7.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -189,8 +187,6 @@ GEM
     method_source (1.0.0)
     mini_mime (1.1.2)
     mini_portile2 (2.8.0)
-    mini_racer (0.6.3)
-      libv8-node (~> 16.10.0.0)
     minitest (5.16.3)
     msgpack (1.6.0)
     net-imap (0.3.2)
@@ -354,7 +350,6 @@ DEPENDENCIES
   jbuilder (~> 2.11)
   jquery-rails (~> 4.5)
   listen
-  mini_racer (~> 0.6.0)
   pg
   popper_js
   pry-byebug
