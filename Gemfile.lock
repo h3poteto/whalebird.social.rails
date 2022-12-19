@@ -300,7 +300,7 @@ GEM
       sprockets (> 3.0)
       sprockets-rails
       tilt
-    sdoc (2.4.0)
+    sdoc (2.5.0)
       rdoc (>= 5.0)
     simple_form (5.1.0)
       actionpack (>= 5.2)
@@ -359,7 +359,7 @@ DEPENDENCIES
   rspec-rails
   rubocop
   sass-rails (~> 6.0)
-  sdoc (~> 2.4.0)
+  sdoc (~> 2.5.0)
   simple_form
   slack-notifier
   spring
