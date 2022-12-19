@@ -22,7 +22,7 @@ gem "popper_js"
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem "jbuilder", "~> 2.11"
 # bundle exec rake doc:rails generates the API under doc/api.
-gem "sdoc", "~> 2.4.0", group: :doc
+gem "sdoc", "~> 2.5.0", group: :doc
 
 gem "sprockets-rails"
 
