@@ -9,6 +9,7 @@ Rails.application.routes.draw do
     end
     get "/desktop/privacy_policy" => "desktop/privacy_policy#index"
     get "/desktop" => "desktop/contents#index"
+    get "/desktop/releases" => "desktop/releases#index"
     root to: "desktop/contents#index"
   end
 end
