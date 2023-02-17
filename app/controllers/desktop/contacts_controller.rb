@@ -11,11 +11,8 @@ end
 class Desktop::ContactsController < DesktopController
   RECAPTCHA_SITEVERIFY_URL = 'https://www.google.com/recaptcha/api/siteverify'
 
-  # GET /desktop/contacts/1
+  # GET /desktop/contacts
   def show
-    @inquiry = ::Inquiry.where(id: session[:inquiry_id]).first
-    session.delete(:inquiry_id)
-    redirect_to root_path if @inquiry.blank?
   end
 
   # GET /desktop/contacts/new
@@ -47,9 +44,9 @@ class Desktop::ContactsController < DesktopController
       return render :new
     end
 
-    if @inquiry.save
-      session[:inquiry_id] = @inquiry.id
-      redirect_to desktop_contact_path(@inquiry, locale: params[:locale]), notice: t('desktop.contacts.create.success')
+    if @inquiry.send_admin
+      flash.now[:notice] = t('desktop.contacts.create.success')
+      return render :show
     else
       render :new
     end
