@@ -9,4 +9,4 @@ en:
         recaptcha_score_error: "Session error"
       show:
         title: "Contact"
-        success: "The inquiry accepted with the following contents"
+        success: "We received your inquiry, thank you."

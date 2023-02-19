@@ -2,7 +2,7 @@
   <%= f.error_notification %>
 
   <%= f.input :email, placeholder: 'contact@example.com' %>
-  <%= f.input :body %>
+  <%= f.input :body, as: :text %>
 
   <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
 

@@ -7,7 +7,7 @@ RSpec.describe Desktop::ContactsController, type: :routing do
     end
 
     it "routes to #show" do
-      expect(:get => "/desktop/contacts/1").to route_to("desktop/contacts#show", :id => "1")
+      expect(get: '/desktop/contacts').to route_to('desktop/contacts#show')
     end
 
     it "routes to #create" do

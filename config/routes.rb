@@ -5,7 +5,7 @@ Rails.application.routes.draw do
     namespace :desktop do
       get "/contents/downloads" => "contents#downloads"
       resources :contents, only: :index
-      resources :contacts, only: %i[show new create]
+      resource :contacts, only: %i[show new create]
     end
     get "/desktop/privacy_policy" => "desktop/privacy_policy#index"
     get "/desktop" => "desktop/contents#index"
