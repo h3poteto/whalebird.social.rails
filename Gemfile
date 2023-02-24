@@ -3,7 +3,7 @@ source "https://rubygems.org"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem "rails", "7.0.4.2"
 
-gem "pg"
+gem "sqlite3", "~> 1.4"
 # Use SCSS for stylesheets
 gem "sass-rails", "~> 6.0"
 # Use Uglifier as compressor for JavaScript assets
