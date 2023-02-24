@@ -24,8 +24,6 @@ services:
       - .:/usr/src/app
     ports:
       - "3000:3000"
-    links:
-      - postgres:postgres
     command: /bin/bash
 
 volumes:
