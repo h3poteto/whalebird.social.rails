@@ -44,6 +44,50 @@ body[data-controller="desktop/contents"][data-action="index"] {
     }
   }
 
+  .divider {
+    border-top: 1px solid rgb(236, 236, 236);
+  }
+
+  .fedistar {
+    margin: 8rem 0;
+    text-align: center;
+
+    a {
+      text-decoration: none;
+    }
+
+    .preview {
+      border: 1px solid rgb(236, 236, 236);
+      border-radius: 8px;
+      display: flex;
+      margin: 0 auto;
+      text-align: left;
+      width: 380px;
+
+
+
+      .icon {
+        img {
+          width: 96px;
+        }
+      }
+
+      .content {
+        padding: 8px;
+
+        .title {
+          font-size: 18px;
+          font-weight: bold;
+          margin: 0;
+        }
+
+        .body {
+          margin: 0;
+        }
+      }
+    }
+  }
+
   .bg-gray {
     background-color: rgb(236, 236, 236);
   }

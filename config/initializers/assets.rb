@@ -12,3 +12,8 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 # application.js, application.css, and all non-JS/CSS in the app/assets
 # folder are already added.
 Rails.application.config.assets.precompile += %w[*.js app/assets/*.css app/assets/*.less *.erb ios.css desktop.css]
+
+# https://github.com/sass/sassc-ruby/issues/197
+Rails.application.config.assets.configure do |env|
+  env.export_concurrent = false
+end
