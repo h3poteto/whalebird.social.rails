@@ -57,6 +57,9 @@ en:
           proxy:
             title: "Proxy support"
             body: "You can use proxy server like modern web browsers. Whalebird can load OS proxy configuration, or you can apply certain proxy only to Whalebird."
+        fedistar:
+          title: "Do you prefer multi-column apps?"
+          description: "If so, let's try Fedistar"
         donate:
           title: "Sponsor"
           description: "Whalebird is free software. We don't monetize with advertisement. So your donation supports this project."
