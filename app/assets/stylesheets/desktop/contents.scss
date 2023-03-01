@@ -118,6 +118,7 @@ body[data-controller="desktop/contents"][data-action="downloads"] {
       }
     }
 
+    a,
     a:hover {
       text-decoration: none;
     }
@@ -146,6 +147,7 @@ body[data-controller="desktop/contents"][data-action="downloads"] {
         background-color: #2C3E50;
         color: #ffffff;
         border: none;
+        border-radius: 0;
       }
 
       .code {
