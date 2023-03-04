@@ -25,6 +25,7 @@ ja:
           armv7l:
             title: "Whalebird-5.0.0-armv7l.tar.bz2"
             link: "https://github.com/h3poteto/whalebird-desktop/releases/download/5.0.0/Whalebird-5.0.0-linux-armv7l.tar.bz2"
+          warning: "4.7.4から5.0.0にアップデートする場合、ローカルのデータが引き継がれません。そのためアップデートしたあとにすべてのサーバーに再度ログインしなおす必要があります。"
       index:
         title: "Whalebird"
         short_description: "Whalebirdはデスクトップ向けのMastodon・Pleroma・Misskeyクライアントです"
