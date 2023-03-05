@@ -5,20 +5,11 @@
   <div id="windows">
     <h3>Windows</h3>
     <hr class="mb-4 mt-0" />
-    <%= link_to t(".download.win64.link") do %>
-      <button type="button" class="btn btn-info btn-lg download-button">
-        <div class="download-name">
-          <i class="fab fa-windows os mr-2"></i> <%= t(".download.win64.title") %>
-        </div>
-      </button>
-    <% end %>
-    <%= link_to t(".download.win32.link") do %>
-      <button type="button" class="btn btn-info btn-lg download-button">
-        <div class="download-name">
-          <i class="fab fa-windows os mr-2"></i> <%= t(".download.win32.title") %>
-        </div>
-      </button>
-    <% end %>
+    <div class="store-link">
+      <%= link_to 'https://apps.microsoft.com/store/detail/whalebird/9NBW4CSDV5HC' do %>
+        <%= image_tag "desktop/windows_store.svg" %>
+      <% end %>
+    </div>
   </div>
   <div id="darwin">
     <h3>Mac</h3>
@@ -35,7 +26,7 @@
       </div>
     </div>
     <div class="store-link">
-      <%= link_to 'https://itunes.apple.com/us/app/whalebird/id1378283354' do %>
+      <%= link_to 'https://apps.apple.com/us/app/whalebird/id6445864587' do %>
         <%= image_tag "desktop/app_store_link.svg" %>
       <% end %>
     </div>
