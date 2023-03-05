@@ -25,6 +25,7 @@ en:
           armv7l:
             title: "Whalebird-5.0.0-armv7l.tar.bz2"
             link: "https://github.com/h3poteto/whalebird-desktop/releases/download/5.0.0/Whalebird-5.0.0-linux-armv7l.tar.bz2"
+          warning: "Whalebird 5.0.0 doesn't migrate your local databases from version 4. So please re-authenticate all servers when you upgrade Whalebird from 4.7.4."
       index:
         title: "Whalebird"
         short_description: "Whalebird is a Mastodon, Pleroma, and Misskey client for desktop application"
