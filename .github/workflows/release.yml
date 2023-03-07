@@ -23,7 +23,7 @@ jobs:
       - name: Setup Docker buildx
         uses: docker/setup-buildx-action@v2
       - name: Configure AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v1
+        uses: aws-actions/configure-aws-credentials@v2
         with:
           role-to-assume: arn:aws:iam::564677439943:role/github-actions-ci
           aws-region: ap-northeast-1
