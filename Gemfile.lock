@@ -299,7 +299,7 @@ GEM
       sprockets (> 3.0)
       sprockets-rails
       tilt
-    sdoc (2.6.0)
+    sdoc (2.6.1)
       rdoc (>= 5.0)
     simple_form (5.2.0)
       actionpack (>= 5.2)
@@ -316,7 +316,7 @@ GEM
     sqlite3 (1.6.1)
       mini_portile2 (~> 2.8.0)
     sqlite3 (1.6.1-x86_64-linux)
-    stringio (3.0.4)
+    stringio (3.0.5)
     thor (1.2.1)
     tilt (2.0.11)
     timeout (0.3.2)
