@@ -5,26 +5,26 @@ en:
         title: "Downloads"
         download:
           dmg:
-            title: "Whalebird-5.0.1.dmg"
-            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/v5.0.1/Whalebird-5.0.1-darwin-universal.dmg"
+            title: "Whalebird-5.0.2.dmg"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/v5.0.2/Whalebird-5.0.2-darwin-universal.dmg"
           appimage:
-            title: "Whalebird-5.0.1-x64.AppImage"
-            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/v5.0.1/Whalebird-5.0.1-linux-x64.AppImage"
+            title: "Whalebird-5.0.2-x64.AppImage"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/v5.0.2/Whalebird-5.0.2-linux-x64.AppImage"
           deb64:
-            title: "Whalebird-5.0.1-x64.deb"
-            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/v5.0.1/Whalebird-5.0.1-linux-x64.deb"
+            title: "Whalebird-5.0.2-x64.deb"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/v5.0.2/Whalebird-5.0.2-linux-x64.deb"
           rpm64:
-            title: "Whalebird-5.0.1-x64.rpm"
-            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/v5.0.1/Whalebird-5.0.1-linux-x64.rpm"
+            title: "Whalebird-5.0.2-x64.rpm"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/v5.0.2/Whalebird-5.0.2-linux-x64.rpm"
           tar64:
-            title: "Whalebird-5.0.1-x64.tar.bz2"
-            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/v5.0.1/Whalebird-5.0.1-linux-x64.tar.bz2"
+            title: "Whalebird-5.0.2-x64.tar.bz2"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/v5.0.2/Whalebird-5.0.2-linux-x64.tar.bz2"
           arm64:
-            title: "Whalebird-5.0.1-arm64.tar.bz2"
-            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/v5.0.1/Whalebird-5.0.1-linux-arm64.tar.bz2"
+            title: "Whalebird-5.0.2-arm64.tar.bz2"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/v5.0.2/Whalebird-5.0.2-linux-arm64.tar.bz2"
           armv7l:
-            title: "Whalebird-5.0.1-armv7l.tar.bz2"
-            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/v5.0.1/Whalebird-5.0.1-linux-armv7l.tar.bz2"
+            title: "Whalebird-5.0.2-armv7l.tar.bz2"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/v5.0.2/Whalebird-5.0.2-linux-armv7l.tar.bz2"
           warning: "Whalebird 5.0.0 doesn't migrate your local databases from version 4. So please re-authenticate all servers when you upgrade Whalebird from 4.7.4."
       index:
         title: "Whalebird"
