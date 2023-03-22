@@ -19,7 +19,7 @@
       <div class="input-group-prepend">
         <span class="input-group-text pr-1">$</span>
       </div>
-      <input id="brew" type="text" class="form-control code" aria-label="Amount (to the nearest dollar)" value="brew install --cask whalebird" readonly>
+      <input id="brew" type="text" class="form-control code" aria-label="homebrew" value="brew install --cask whalebird" readonly>
       <div class="input-group-append">
         <button class="input-group-text btn btn-dark" data-clipboard-target="#brew">
           <i class="fas fa-copy"></i>
@@ -31,13 +31,6 @@
         <%= image_tag "desktop/app_store_link.svg" %>
       <% end %>
     </div>
-    <%= link_to t(".download.dmg.link") do %>
-      <button type="button" class="btn btn-info btn-lg download-button">
-        <div class="download-name">
-          <i class="fab fa-apple os mr-2"></i> <%= t(".download.dmg.title") %>
-        </div>
-      </button>
-    <% end %>
   </div>
   <div id="linux">
     <h3>Linux</h3>
@@ -46,7 +39,7 @@
       <div class="input-group-prepend">
         <span class="input-group-text pr-1">$</span>
       </div>
-      <input id="yay" type="text" class="form-control code" aria-label="Amount (to the nearest dollar)" value="yay -S whalebird" readonly>
+      <input id="yay" type="text" class="form-control code" aria-label="yay" value="yay -S whalebird" readonly>
       <div class="input-group-append">
         <button class="input-group-text btn btn-dark" data-clipboard-target="#yay">
           <i class="fas fa-copy"></i>
@@ -57,11 +50,11 @@
       <div class="input-group-prepend">
         <span class="input-group-text pr-1">$</span>
       </div>
-      <input id="snap" type="text" class="form-control code" aria-label="Amount (to the nearest dollar)" value="sudo snap install whalebird" readonly>
+      <input id="flatpak" type="text" class="form-control code" aria-label="flatpak" value="flatpak install flathub social.whalebird.WhalebirdDesktop" readonly>
       <div class="input-group-append">
-        <button class="input-group-text btn btn-dark"  data-clipboard-target="#snap">
+        <button class="input-group-text btn btn-dark" data-clipboard-target="#flatpak">
           <i class="fas fa-copy"></i>
-        </span>
+        </button>
       </div>
     </div>
     <div class="store-link">
@@ -87,16 +80,6 @@
     <%= link_to t(".download.tar64.link") do %>
       <button type="button" class="btn btn-info btn-lg download-button">
         <i class="fab fa-linux os mr-2"></i> <%= t(".download.tar64.title") %>
-      </button>
-    <% end %>
-    <%= link_to t(".download.arm64.link") do %>
-      <button type="button" class="btn btn-info btn-lg download-button">
-        <i class="fab fa-linux os mr-2"></i> <%= t(".download.arm64.title") %>
-      </button>
-    <% end %>
-    <%= link_to t(".download.armv7l.link") do %>
-      <button type="button" class="btn btn-info btn-lg download-button">
-        <i class="fab fa-linux os mr-2"></i> <%= t(".download.armv7l.title") %>
       </button>
     <% end %>
   </div>
