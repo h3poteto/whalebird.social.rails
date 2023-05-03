@@ -5,17 +5,17 @@ ja:
         title: "ダウンロード"
         download:
           appimage:
-            title: "Whalebird-5.0.3-x64.AppImage"
-            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/v5.0.3/Whalebird-5.0.3-linux-x64.AppImage"
+            title: "Whalebird-5.0.5-linux-x86_64.AppImage"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/v5.0.5/Whalebird-5.0.5-linux-x86_64.AppImage"
           deb64:
-            title: "Whalebird-5.0.3-x64.deb"
-            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/v5.0.3/Whalebird-5.0.3-linux-x64.deb"
+            title: "Whalebird-5.0.5-linux-amd64.deb"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/v5.0.5/Whalebird-5.0.5-linux-amd64.deb"
           rpm64:
-            title: "Whalebird-5.0.3-x64.rpm"
-            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/v5.0.3/Whalebird-5.0.3-linux-x64.rpm"
+            title: "Whalebird-5.0.5-linux-x86_64.rpm"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/v5.0.5/Whalebird-5.0.5-linux-x86_64.rpm"
           tar64:
-            title: "Whalebird-5.0.3-x64.tar.bz2"
-            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/v5.0.3/Whalebird-5.0.3-linux-x64.tar.bz2"
+            title: "Whalebird-5.0.5-linux-x64.tar.bz2"
+            link: "https://github.com/h3poteto/whalebird-desktop/releases/download/v5.0.5/Whalebird-5.0.5-linux-x64.tar.bz2"
           warning: "4.7.4から5.0.0にアップデートする場合、ローカルのデータが引き継がれません。そのためアップデートしたあとにすべてのサーバーに再度ログインしなおす必要があります。"
       index:
         title: "Whalebird"
